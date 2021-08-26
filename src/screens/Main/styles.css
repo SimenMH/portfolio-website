@@ -1,0 +1,28 @@
+.nav-buttons-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-button {
+  margin: 1rem;
+  border: solid rgba(0, 0, 0, 0.493);
+  border-width: 0 8px 8px 0;
+  padding: 15px;
+}
+
+.nav-left {
+  transform: rotate(135deg);
+}
+
+.nav-down {
+  align-self: flex-end;
+  transform: rotate(45deg);
+}
+
+.nav-right {
+  transform: rotate(-45deg);
+}
