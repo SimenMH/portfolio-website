@@ -14,9 +14,9 @@
   align-items: center;
 }
 
-.nav-button:hover {
+/* .nav-button:hover {
   background-color: cornflowerblue;
-}
+} */
 
 .nav-down {
   align-self: flex-end;
@@ -29,11 +29,11 @@
 }
 
 .nav-arrow {
-  margin: 1rem;
   width: 3px;
   height: 3px;
-  border: solid rgba(0, 0, 0, 0.493);
+  border: solid rgba(192, 185, 197, 0.493);
   border-width: 0 8px 8px 0;
+  margin: 1.2rem;
   padding: 15px;
 }
 
