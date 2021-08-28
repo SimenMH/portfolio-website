@@ -5,13 +5,13 @@
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  background: rgb(182, 134, 219);
+  background: rgb(34, 23, 23);
   background: linear-gradient(
-    37deg,
-    rgba(182, 134, 219, 1) 0%,
-    rgba(130, 191, 162, 1) 50%,
-    rgba(126, 194, 159, 1) 73%,
-    rgba(117, 171, 187, 1) 100%
+    210deg,
+    rgba(34, 23, 23, 1) 0%,
+    rgba(20, 19, 19, 1) 20%,
+    rgba(19, 20, 20, 1) 85%,
+    rgba(20, 24, 24, 1) 100%
   );
 }
 
@@ -23,7 +23,7 @@
 }
 
 .nav-button:hover {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(42, 42, 42, 0.15);
 }
 
 .nav-down {
@@ -39,7 +39,7 @@
 .nav-arrow {
   width: 3px;
   height: 3px;
-  border: solid rgba(53, 50, 54, 0.493);
+  border: solid rgba(139, 139, 139, 0.493);
   border-width: 0 8px 8px 0;
   padding: 15px;
 }
