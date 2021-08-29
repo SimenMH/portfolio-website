@@ -26,6 +26,7 @@
 
 .center-container {
   display: flex;
+  height: 100%;
 }
 
 .center-content {
