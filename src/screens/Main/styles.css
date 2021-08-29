@@ -1,10 +1,5 @@
-.nav-buttons-container {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: space-between;
+.page-container {
+  min-height: 100vh;
   background: rgb(34, 23, 23);
   background: linear-gradient(
     210deg,
@@ -13,27 +8,42 @@
     rgba(19, 20, 20, 1) 85%,
     rgba(20, 24, 24, 1) 100%
   );
+  display: flex;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.center-container {
+  display: flex;
+}
+
+.center-content {
+  display: flex;
 }
 
 .nav-button {
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-button:hover {
   background-color: rgba(42, 42, 42, 0.15);
 }
 
-.nav-down {
-  align-self: flex-end;
-  width: 100%;
-}
-
-.nav-right,
-.nav-left {
-  height: 100%;
+.nav-down,
+.nav-up {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-arrow {
@@ -42,6 +52,11 @@
   border: solid rgba(139, 139, 139, 0.493);
   border-width: 0 8px 8px 0;
   padding: 15px;
+}
+
+.nav-up .nav-arrow {
+  transform: rotate(-135deg);
+  margin-top: 1rem;
 }
 
 .nav-left .nav-arrow {
@@ -57,4 +72,11 @@
 .nav-right .nav-arrow {
   transform: rotate(-45deg);
   margin-right: 1rem;
+}
+
+.nav-left .nav-arrow,
+.nav-right .nav-arrow {
+  position: sticky;
+  top: 50vh;
+  bottom: 50vh;
 }
