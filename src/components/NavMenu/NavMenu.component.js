@@ -26,17 +26,25 @@ const NavMenu = () => {
     });
   };
 
+  const goToScreen = newScreen => {
+    console.log(newScreen);
+    setShowMenu(false);
+  };
+
   const renderMenuItems = () => {
     return menuItems.map((item, index, arr) => {
       return (
         <div className='menu-item-container'>
-          <div className='menu-item'>
+          <div className='menu-item' onClick={() => goToScreen(item.path)}>
             <h2>{item.name}</h2>
           </div>
           {item.submenu &&
             item.submenu.map((item, index, arr) => {
               return (
-                <div className='menu-item submenu-item'>
+                <div
+                  className='menu-item submenu-item'
+                  onClick={() => goToScreen(item.path)}
+                >
                   <div className='submenu-list-line' />
                   <h2>
                     <div className='submenu-dot' />
