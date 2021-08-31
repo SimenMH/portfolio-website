@@ -21,13 +21,11 @@ const NavMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu(prevState => {
-      return !prevState;
-    });
+    setShowMenu(prevState => !prevState);
   };
 
   const goToScreen = newScreen => {
-    console.log(newScreen);
+    console.log('go to /' + newScreen);
     setShowMenu(false);
   };
 
