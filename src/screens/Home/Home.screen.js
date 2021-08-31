@@ -8,10 +8,18 @@ const Home = () => {
         <h2>Full-Stack Web Developer</h2>
         <div className='line-seperator' />
         <p>
-          Welcome to the portfolio website of a{' '}
+          Welcome to the (work in progress) portfolio website of a{' '}
           <span className='cool-adjective'>{'{ coolAdjective }'}</span> web
           developer
         </p>
+      </div>
+      <div className='status-container'>
+        <div className='status'>
+          <h2>I am currently</h2>
+          <div className='current-status'>
+            <h2>looking for work!</h2>
+          </div>
+        </div>
       </div>
       <div className='some-links'>
         <a
