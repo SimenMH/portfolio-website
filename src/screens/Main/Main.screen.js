@@ -1,6 +1,7 @@
 import './styles.css';
 
 import NavArrow from '../../components/NavArrow/NavArrow.component';
+import Home from '../Home/Home.screen';
 
 const Main = () => {
   return (
@@ -19,24 +20,7 @@ const Main = () => {
         </div>
         <div className='center-container'>
           <NavArrow direction='left' label='About me' />
-          <div className='center-content'>
-            {/*  */}
-            <div className='about-me'>
-              <h1>Hello, I am Simen</h1>
-              <h2>Full-Stack Web Developer</h2>
-              <div className='line-seperator' />
-              <p>
-                A {'{coolSoundingAdjective}'} developer residing and surviving
-                in the frozen wastes of Norway
-              </p>
-            </div>
-            <div className='some-links'>
-              <div className='link-icon' />
-              <div className='link-icon' />
-              <div className='link-icon' />
-            </div>
-            {/*  */}
-          </div>
+          <Home />
           <NavArrow direction='right' label='Contact' />
         </div>
         <div className='bottom-container'>

@@ -36,7 +36,7 @@
 
 .nav-up .nav-arrow {
   transform: rotate(-135deg);
-  margin-bottom: -0.5rem;
+  margin-bottom: -1.5rem;
 }
 
 .nav-left .nav-arrow {
@@ -46,7 +46,7 @@
 
 .nav-down .nav-arrow {
   transform: rotate(45deg);
-  margin-top: -0.5rem;
+  margin-top: -1.5rem;
 }
 
 .nav-right .nav-arrow {
