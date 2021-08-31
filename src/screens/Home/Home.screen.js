@@ -8,8 +8,8 @@ const Home = () => {
         <h2>Full-Stack Web Developer</h2>
         <div className='line-seperator' />
         <p>
-          A {'{coolSoundingAdjective}'} developer residing and surviving in the
-          frozen wastes of Norway
+          A {'{coolAdjective}'} developer residing and surviving in the frozen
+          wastes of Norway
         </p>
       </div>
       <div className='some-links'>
