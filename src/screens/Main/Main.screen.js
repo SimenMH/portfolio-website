@@ -19,10 +19,10 @@ const Main = () => {
 
         <div className='page-content'>
           <div className='top-container'>
-            {/* <NavArrow direction='up' label='Career' /> */}
+            {/* <NavArrow direction='up' label='Career' path='career' /> */}
           </div>
           <div className='center-container'>
-            <NavArrow direction='left' label='About me' />
+            <NavArrow direction='left' label='About me' path='about' />
             <Switch>
               <Route path='/' exact>
                 <Home />
@@ -32,10 +32,10 @@ const Main = () => {
               </Route>
               <Redirect from='*' to='/' />
             </Switch>
-            <NavArrow direction='right' label='Contact' />
+            <NavArrow direction='right' label='Contact' path='contact' />
           </div>
           <div className='bottom-container'>
-            <NavArrow direction='down' label='Portfolio' />
+            <NavArrow direction='down' label='Portfolio' path='portfolio' />
           </div>
         </div>
       </div>

@@ -5,6 +5,8 @@
   align-items: center;
   width: 250px;
   height: 150px;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-up {
