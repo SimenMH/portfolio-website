@@ -61,8 +61,8 @@
   height: fit-content;
   background: linear-gradient(
     56.35deg,
-    rgba(0, 209, 255, 0.05) -90%,
-    rgba(158, 158, 158, 0.15) 50%,
+    rgba(0, 209, 255, 0.05) -190%,
+    rgba(158, 158, 158, 0.15) 0%,
     rgba(255, 0, 0, 0.05) 190%
   );
   border: 1px solid rgba(255, 255, 255, 0.3);
