@@ -28,8 +28,8 @@ const Main = () => {
               <h2>Full-Stack Web Developer</h2>
               <div className='line-seperator' />
               <p>
-                A passionate and positive developer residing and surviving in
-                the frozen wastes of Norway
+                A {'{coolSoundingAdjective}'} developer residing and surviving
+                in the frozen wastes of Norway
               </p>
             </div>
             <div className='some-links'>
