@@ -1,21 +1,31 @@
 .nav-button {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
 }
 
 .nav-button:hover {
-  background-color: rgba(42, 42, 42, 0.15);
+  background-color: rgb(0, 68, 255);
 }
 
-.nav-down,
 .nav-up {
-  display: flex;
-  justify-content: center;
-  width: 50%;
+  flex-direction: column-reverse;
 }
 
-.nav-left,
+.nav-down {
+  flex-direction: column;
+}
+
+.nav-left {
+  flex-direction: row-reverse;
+  margin-left: 1rem;
+}
+
 .nav-right {
-  height: 50%;
+  margin-right: 1rem;
 }
 
 .nav-arrow {
@@ -30,27 +40,31 @@
 
 .nav-up .nav-arrow {
   transform: rotate(-135deg);
-  margin-top: 2rem;
+  margin-bottom: -0.5rem;
 }
 
 .nav-left .nav-arrow {
   transform: rotate(135deg);
-  margin-left: 2rem;
+  margin-right: -1rem;
 }
 
 .nav-down .nav-arrow {
   transform: rotate(45deg);
-  margin-bottom: 2rem;
+  margin-top: -0.5rem;
 }
 
 .nav-right .nav-arrow {
   transform: rotate(-45deg);
-  margin-right: 2rem;
+  margin-left: -1rem;
 }
 
-.nav-left .nav-arrow,
-.nav-right .nav-arrow {
+.nav-left,
+.nav-right {
   position: sticky;
-  top: 50vh;
+  top: 45vh;
   bottom: 50vh;
+}
+
+.label {
+  font-size: 18px;
 }

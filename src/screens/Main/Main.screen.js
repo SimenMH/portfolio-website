@@ -15,10 +15,10 @@ const Main = () => {
 
       <div className='page-content'>
         <div className='top-container'>
-          <NavArrow direction='up' />
+          <NavArrow direction='up' label='Career' />
         </div>
         <div className='center-container'>
-          <NavArrow direction='left' />
+          <NavArrow direction='left' label='About me' />
           <div className='center-content'>
             {/*  */}
             <div className='about-me'>
@@ -37,10 +37,10 @@ const Main = () => {
             </div>
             {/*  */}
           </div>
-          <NavArrow direction='right' />
+          <NavArrow direction='right' label='Contact' />
         </div>
         <div className='bottom-container'>
-          <NavArrow direction='down' />
+          <NavArrow direction='down' label='Portfolio' />
         </div>
       </div>
     </div>
