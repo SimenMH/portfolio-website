@@ -1,5 +1,7 @@
 import './styles.css';
 
+import NavArrow from '../../components/NavArrow/NavArrow.component';
+
 const Main = () => {
   return (
     <div className='page-container'>
@@ -13,14 +15,10 @@ const Main = () => {
 
       <div className='page-content'>
         <div className='top-container'>
-          <div className='nav-button nav-up'>
-            <div className='nav-arrow' />
-          </div>
+          <NavArrow direction='up' />
         </div>
         <div className='center-container'>
-          <div className='nav-button nav-left'>
-            <div className='nav-arrow' />
-          </div>
+          <NavArrow direction='left' />
           <div className='center-content'>
             {/*  */}
             <div className='about-me'>
@@ -39,14 +37,10 @@ const Main = () => {
             </div>
             {/*  */}
           </div>
-          <div className='nav-button nav-right'>
-            <div className='nav-arrow' />
-          </div>
+          <NavArrow direction='right' />
         </div>
         <div className='bottom-container'>
-          <div className='nav-button nav-down'>
-            <div className='nav-arrow' />
-          </div>
+          <NavArrow direction='down' />
         </div>
       </div>
     </div>
