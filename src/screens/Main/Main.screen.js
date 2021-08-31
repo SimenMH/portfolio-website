@@ -2,17 +2,12 @@ import './styles.css';
 
 import NavArrow from '../../components/NavArrow/NavArrow.component';
 import Home from '../Home/Home.screen';
+import NavMenu from '../../components/NavMenu/NavMenu.component';
 
 const Main = () => {
   return (
     <div className='page-container'>
-      <div className='menu-button'>
-        <div className='menu-line-container'>
-          <div className='menu-line' />
-          <div className='menu-line' />
-          <div className='menu-line' />
-        </div>
-      </div>
+      <NavMenu />
 
       <div className='page-content'>
         <div className='top-container'>

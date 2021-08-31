@@ -1,3 +1,5 @@
+import './styles.css';
+
 const NavMenu = () => {
   return (
     <div className='menu-button'>
