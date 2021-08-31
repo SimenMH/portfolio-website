@@ -13,33 +13,38 @@
   justify-content: center;
   align-self: flex-start;
   margin-right: 15%;
-  margin-left: 10%;
-  margin-top: 10%;
+  /* margin-left: 5%; */
+  margin-top: 25vh;
 }
 
 .home-text h1 {
   margin: 0;
   margin-left: -2px;
   font-weight: 400;
-  font-size: 78px;
+  font-size: 72px;
   background: linear-gradient(
     265deg,
-    rgba(158, 79, 79, 0.7) 0%,
+    rgba(158, 79, 79, 0.5) -50%,
     #ffffff 50%,
-    rgba(72, 137, 151, 0.5) 160%
+    rgba(72, 137, 151, 0.5) 300%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.cool-adjective {
+  font-weight: bold;
+}
+
 .home-text h2 {
   margin: 0;
+  margin-left: 2px;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 36px;
   background: linear-gradient(
     265deg,
-    rgba(158, 79, 79, 0.7) 0%,
+    rgba(158, 79, 79, 0.5) 0%,
     #ffffff 50%,
     rgba(72, 137, 151, 0.5) 175%
   );
@@ -50,27 +55,50 @@
 
 .home-text p {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
+  margin-left: 3px;
 }
 
 .line-seperator {
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  width: 50%;
-  margin-top: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 .some-links {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 20rem;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
 .link-icon {
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
-  background-color: #c4c4c4;
+  background: linear-gradient(
+    56.35deg,
+    rgb(28, 92, 101) -90%,
+    rgb(72, 73, 68) 55%,
+    rgb(105, 29, 24) 185%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.link-icon svg {
+  fill: rgba(225, 225, 225, 0.8);
+  width: 70%;
+  height: 70%;
+}
+
+.link-icon:hover {
+  width: 60px;
+  height: 60px;
 }

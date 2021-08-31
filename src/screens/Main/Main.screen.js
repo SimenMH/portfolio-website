@@ -19,7 +19,7 @@ const Main = () => {
 
         <div className='page-content'>
           <div className='top-container'>
-            <NavArrow direction='up' label='Career' />
+            {/* <NavArrow direction='up' label='Career' /> */}
           </div>
           <div className='center-container'>
             <NavArrow direction='left' label='About me' />
