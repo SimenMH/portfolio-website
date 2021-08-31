@@ -27,7 +27,10 @@ const Main = () => {
               <h1>Hello, I am Simen</h1>
               <h2>Full-Stack Web Developer</h2>
               <div className='line-seperator' />
-              <p>Welcome to my portfolio website</p>
+              <p>
+                A passionate and positive developer residing and surviving in
+                the frozen wastes of Norway
+              </p>
             </div>
             <div className='some-links'>
               <div className='link-icon' />
