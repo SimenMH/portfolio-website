@@ -13,7 +13,6 @@ const menuItems = [
       { name: 'Mobile', path: 'portfolio/mobile' },
       { name: 'Games', path: 'portfolio/games' },
     ],
-    toggled: false,
   },
   { name: 'Contact', path: 'contact', submenu: false },
 ];
