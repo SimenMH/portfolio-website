@@ -9,18 +9,6 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* min-height: 100vh;
-  min-width: 100vh; */
-  /* background: rgb(34, 23, 23);
-  background: linear-gradient(
-    210deg,
-    rgba(34, 23, 23, 1) 0%,
-    rgba(20, 19, 19, 1) 20%,
-    rgba(19, 20, 20, 1) 85%,
-    rgba(20, 24, 24, 1) 100%
-  ); */
-
   background: linear-gradient(
     243.17deg,
     #352424 -8.58%,
@@ -29,8 +17,6 @@ body {
     #252a2b 87.75%,
     #2e4142 111.52%
   );
-
-  /* display: flex; */
 }
 
 code {

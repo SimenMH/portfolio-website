@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 175px;
+  width: 250px;
   height: 150px;
 }
 
@@ -56,9 +56,11 @@
 
 .nav-left,
 .nav-right {
+  justify-content: flex-end;
   position: sticky;
   top: 45vh;
   bottom: 50vh;
+  align-self: flex-start;
 }
 
 .label {
