@@ -78,6 +78,8 @@
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .menu-item h2 {

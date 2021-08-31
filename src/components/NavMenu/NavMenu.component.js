@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 const menuItems = [
@@ -24,31 +25,31 @@ const NavMenu = () => {
     setShowMenu(prevState => !prevState);
   };
 
-  const goToScreen = newScreen => {
-    console.log('go to /' + newScreen);
-    setShowMenu(false);
-  };
-
   const renderMenuItems = () => {
     return menuItems.map((item, index, arr) => {
       return (
         <div className='menu-item-container'>
-          <div className='menu-item' onClick={() => goToScreen(item.path)}>
+          <Link
+            className='menu-item'
+            to={item.path}
+            onClick={() => setShowMenu(false)}
+          >
             <h2>{item.name}</h2>
-          </div>
+          </Link>
           {item.submenu &&
             item.submenu.map((item, index, arr) => {
               return (
-                <div
+                <Link
                   className='menu-item submenu-item'
-                  onClick={() => goToScreen(item.path)}
+                  to={item.path}
+                  onClick={() => setShowMenu(false)}
                 >
                   <div className='submenu-list-line' />
                   <h2>
                     <div className='submenu-dot' />
                     {item.name}
                   </h2>
-                </div>
+                </Link>
               );
             })}
           {index !== arr.length - 1 && <div className='menu-list-line' />}
