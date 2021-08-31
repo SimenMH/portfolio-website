@@ -4,6 +4,11 @@
   left: -175px;
   display: flex;
   flex-direction: row-reverse;
+  transition: 0.3s;
+}
+
+.menu-show {
+  left: 0px;
 }
 
 .menu-button {
