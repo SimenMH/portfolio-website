@@ -22,7 +22,7 @@ const Main = () => {
             {/* <NavArrow direction='up' label='Career' path='career' /> */}
           </div>
           <div className='center-container'>
-            <NavArrow direction='left' label='About me' path='about' />
+            <NavArrow direction='left' label='Contact' path='contact' />
             <Switch>
               <Route path='/' exact>
                 <Home />
@@ -32,7 +32,7 @@ const Main = () => {
               </Route>
               <Redirect from='*' to='/' />
             </Switch>
-            <NavArrow direction='right' label='Contact' path='contact' />
+            <NavArrow direction='right' label='About me' path='about' />
           </div>
           <div className='bottom-container'>
             <NavArrow direction='down' label='Portfolio' path='portfolio' />
