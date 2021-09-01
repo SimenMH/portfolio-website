@@ -1,5 +1,12 @@
 import './styles.css';
-import { Route, Redirect, Switch, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import {
+  Route,
+  Redirect,
+  Switch,
+  useLocation,
+  useHistory,
+} from 'react-router-dom';
 
 import NavMenu from '../../components/NavMenu/NavMenu.component';
 import NavArrow from '../../components/NavArrow/NavArrow.component';
@@ -64,14 +71,34 @@ const navigation = {
 };
 
 const Main = () => {
+  const history = useHistory();
   const curPath = useLocation().pathname;
+  const [transition, setTransition] = useState({
+    animate: false,
+    direction: null,
+  });
 
   const renderNavArrow = dir => {
     const toPath = navigation[curPath][dir];
     if (toPath) {
       const label = navigation[toPath].name;
-      return <NavArrow direction={dir} label={label} path={toPath} />;
+      return (
+        <NavArrow
+          direction={dir}
+          label={label}
+          path={toPath}
+          className='fade-in'
+        />
+      );
     }
+  };
+
+  const goToScreen = dir => {
+    history.push(navigation[curPath][dir]);
+  };
+
+  const startTransition = direction => {
+    setTransition({ animate: true, direction });
   };
 
   return (
@@ -80,7 +107,16 @@ const Main = () => {
 
       <div className='page-content fade-in'>
         <div className='top-container'>{renderNavArrow('up')}</div>
-        <div className='center-container'>
+        <div
+          className={`
+          center-container 
+          ${transition.animate ? `transition-${transition.direction}-anim` : ''}
+          `}
+          onAnimationEnd={() => {
+            goToScreen(transition.direction);
+            setTransition({ animate: false, direction: null });
+          }}
+        >
           {renderNavArrow('left')}
           <Switch>
             <Route path='/' exact>

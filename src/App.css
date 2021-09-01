@@ -1,10 +1,10 @@
-.slide-left-anim {
+.transition-left-anim {
   transform: translateX(0%);
   transition: 0.3s ease-in-out;
-  animation: slide-left 3s forwards;
+  animation: slide-right 1.5s forwards;
 }
 
-@keyframes slide-left {
+@keyframes slide-right {
   5% {
     transform: translateX(0%);
   }
@@ -13,7 +13,8 @@
     filter: blur(4px);
   }
   100% {
-    transform: translateX(-100%);
+    opacity: 0%;
+    transform: translateX(100%);
   }
 }
 
