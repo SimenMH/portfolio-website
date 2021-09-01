@@ -1,0 +1,32 @@
+.slide-left-anim {
+  transform: translateX(0%);
+  transition: 0.3s ease-in-out;
+  animation: slide-left 3s forwards;
+}
+
+@keyframes slide-left {
+  5% {
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 0%;
+    filter: blur(4px);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    filter: blur(4px);
+    opacity: 0%;
+  }
+  100% {
+    filter: blur(0px);
+  }
+}

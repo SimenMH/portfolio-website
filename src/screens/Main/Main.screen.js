@@ -78,7 +78,7 @@ const Main = () => {
     <div className='page-container'>
       <NavMenu />
 
-      <div className='page-content'>
+      <div className='page-content fade-in'>
         <div className='top-container'>{renderNavArrow('up')}</div>
         <div className='center-container'>
           {renderNavArrow('left')}

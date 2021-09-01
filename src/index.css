@@ -17,6 +17,7 @@ body {
     #252a2b 87.75%,
     #2e4142 111.52%
   );
+  overflow-x: hidden;
 }
 
 code {
