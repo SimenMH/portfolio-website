@@ -108,10 +108,9 @@ const Main = () => {
       <div className='page-content fade-in'>
         <div className='top-container'>{renderNavArrow('up')}</div>
         <div
-          className={`
-          center-container 
-          ${transition.animate ? `transition-${transition.direction}` : ''}
-          `}
+          className={`center-container ${
+            transition.animate ? `transition-${transition.direction}` : ''
+          }`}
           onAnimationEnd={() => {
             goToScreen(transition.direction);
             setTransition({ animate: false, direction: null });

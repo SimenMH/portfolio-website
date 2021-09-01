@@ -1,17 +1,21 @@
+:root {
+  --transition-speed: 0.75s;
+}
+
 .transition-left {
-  animation: slide-right 1s forwards;
+  animation: slide-right var(--transition-speed) forwards;
 }
 
 .transition-right {
-  animation: slide-left 1s forwards;
+  animation: slide-left var(--transition-speed) forwards;
 }
 
 .transition-up {
-  animation: slide-down 1s forwards;
+  animation: slide-down var(--transition-speed) forwards;
 }
 
 .transition-down {
-  animation: slide-up 1s forwards;
+  animation: slide-up var(--transition-speed) forwards;
 }
 
 @keyframes slide-left {
