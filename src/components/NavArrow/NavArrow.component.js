@@ -1,13 +1,15 @@
-import { Link } from 'react-router-dom';
 import './styles.css';
 
 const NavArrow = props => {
-  const { direction, label, path } = props;
+  const { direction, label } = props;
   return (
-    <Link to={path} className={`nav-button nav-${direction}`}>
+    <div
+      onClick={() => props.onClickHandler(direction)}
+      className={`nav-button nav-${direction}`}
+    >
       <p className='label'>{label}</p>
       <div className='nav-arrow' />
-    </Link>
+    </div>
   );
 };
 

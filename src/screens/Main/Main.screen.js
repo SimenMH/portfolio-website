@@ -87,7 +87,7 @@ const Main = () => {
           direction={dir}
           label={label}
           path={toPath}
-          className='fade-in'
+          onClickHandler={startTransition}
         />
       );
     }
@@ -110,7 +110,7 @@ const Main = () => {
         <div
           className={`
           center-container 
-          ${transition.animate ? `transition-${transition.direction}-anim` : ''}
+          ${transition.animate ? `transition-${transition.direction}` : ''}
           `}
           onAnimationEnd={() => {
             goToScreen(transition.direction);
