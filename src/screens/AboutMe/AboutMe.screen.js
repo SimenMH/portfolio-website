@@ -4,6 +4,7 @@ const AboutMe = () => {
   return (
     <div className='aboutme-container'>
       <h1>Who Am I?</h1>
+      <p>I'm full-stack developer located in the frozen wastes of Norway.</p>
       <p>
         I began my programming journey in 2012, when I wrote my very first Hello
         World script in Java.
