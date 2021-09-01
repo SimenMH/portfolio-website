@@ -3,3 +3,15 @@
   margin-left: 5%;
   width: 100%;
 }
+
+.aboutme-container h1 {
+  font-size: 48px;
+  color: rgb(125, 171, 190);
+  font-weight: 400;
+}
+
+.aboutme-container p {
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+}
