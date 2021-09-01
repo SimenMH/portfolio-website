@@ -91,7 +91,11 @@
 }
 
 .menu-item:hover {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(98, 98, 98, 0.25);
+}
+
+.current-menu-item {
+  background-color: rgba(34, 34, 34, 0.472);
 }
 
 .menu-list-line {

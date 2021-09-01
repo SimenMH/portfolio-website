@@ -5,6 +5,11 @@ import NavMenu from '../../components/NavMenu/NavMenu.component';
 import NavArrow from '../../components/NavArrow/NavArrow.component';
 import Home from '../Home/Home.screen';
 import AboutMe from '../AboutMe/AboutMe.screen';
+import Contact from '../Contact/Contact.screen';
+import Portfolio from '../Portfolio/Portfolio.screen';
+import MobilePortfolio from '../Portfolio/MobilePortfolio/MobilePortfolio.screen';
+import WebPortfolio from '../Portfolio/WebPortfolio/WebPortfolio.screen';
+import GamePortfolio from '../Portfolio/GamePortfolio/GamePortfolio.screen';
 
 const navigation = {
   '/': {
@@ -36,21 +41,21 @@ const navigation = {
     right: '/portfolio/games',
   },
   '/portfolio/web': {
-    name: 'Web',
+    name: 'Web apps',
     up: '/portfolio',
     down: null,
     left: null,
     right: null,
   },
   '/portfolio/mobile': {
-    name: 'Mobile',
+    name: 'Mobile apps',
     up: null,
     down: null,
     left: null,
     right: '/portfolio',
   },
   '/portfolio/games': {
-    name: 'Games',
+    name: 'Video Games',
     up: null,
     down: null,
     left: '/portfolio',
@@ -83,6 +88,21 @@ const Main = () => {
             </Route>
             <Route path='/about' exact>
               <AboutMe />
+            </Route>
+            <Route path='/contact' exact>
+              <Contact />
+            </Route>
+            <Route path='/portfolio' exact>
+              <Portfolio />
+            </Route>
+            <Route path='/portfolio/mobile' exact>
+              <MobilePortfolio />
+            </Route>
+            <Route path='/portfolio/web' exact>
+              <WebPortfolio />
+            </Route>
+            <Route path='/portfolio/games' exact>
+              <GamePortfolio />
             </Route>
             <Redirect from='*' to='/' />
           </Switch>

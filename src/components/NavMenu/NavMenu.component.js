@@ -1,23 +1,24 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './styles.css';
 
 const menuItems = [
-  { name: 'Home', path: 'home', submenu: false },
-  { name: 'About me', path: 'about', submenu: false },
+  { name: 'Home', path: '/', submenu: false },
+  { name: 'About me', path: '/about', submenu: false },
   {
     name: 'Porfolio',
-    path: 'portfolio',
+    path: '/portfolio',
     submenu: [
-      { name: 'Web', path: 'portfolio/web' },
-      { name: 'Mobile', path: 'portfolio/mobile' },
-      { name: 'Games', path: 'portfolio/games' },
+      { name: 'Web apps', path: '/portfolio/web' },
+      { name: 'Mobile apps', path: '/portfolio/mobile' },
+      { name: 'Video Games', path: '/portfolio/games' },
     ],
   },
-  { name: 'Contact', path: 'contact', submenu: false },
+  { name: 'Contact', path: '/contact', submenu: false },
 ];
 
-const NavMenu = () => {
+const NavMenu = props => {
+  const curPath = useLocation().pathname;
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -29,7 +30,9 @@ const NavMenu = () => {
       return (
         <div className='menu-item-container'>
           <Link
-            className='menu-item'
+            className={`menu-item ${
+              item.path === curPath ? 'current-menu-item' : ''
+            }`}
             to={item.path}
             onClick={() => setShowMenu(false)}
           >
@@ -39,7 +42,9 @@ const NavMenu = () => {
             item.submenu.map((item, index, arr) => {
               return (
                 <Link
-                  className='menu-item submenu-item'
+                  className={`menu-item submenu-item ${
+                    item.path === curPath ? 'current-menu-item' : ''
+                  }`}
                   to={item.path}
                   onClick={() => setShowMenu(false)}
                 >
