@@ -8,6 +8,7 @@
   height: 150px;
   text-decoration: none;
   color: white;
+  z-index: 10;
 }
 
 .nav-up {

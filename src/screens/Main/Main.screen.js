@@ -107,6 +107,12 @@ const Main = () => {
   return (
     <div className='page-container'>
       <NavMenu />
+      <div className='arrow-container'>
+        {renderNavArrow('up')}
+        {renderNavArrow('down')}
+        {renderNavArrow('left')}
+        {renderNavArrow('right')}
+      </div>
 
       <div className='page-content fade-in'>
         <div
@@ -145,12 +151,6 @@ const Main = () => {
             <Redirect from='*' to='/' />
           </Switch>
         </div>
-      </div>
-      <div className='arrow-container'>
-        {renderNavArrow('up')}
-        {renderNavArrow('down')}
-        {renderNavArrow('left')}
-        {renderNavArrow('right')}
       </div>
     </div>
   );
