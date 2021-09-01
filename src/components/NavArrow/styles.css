@@ -1,36 +1,43 @@
 .nav-button {
+  position: absolute;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 175px;
   height: 150px;
   text-decoration: none;
   color: white;
 }
 
 .nav-up {
+  width: 100%;
   flex-direction: column-reverse;
+  top: 0;
 }
 
 .nav-down {
+  width: 100%;
   flex-direction: column;
+  bottom: 0;
 }
 
 .nav-left {
   flex-direction: row-reverse;
+  left: 0;
   margin-left: 1rem;
 }
 
 .nav-right {
   margin-right: 1rem;
+  right: 0;
 }
 
 .nav-arrow {
   width: 3px;
   height: 3px;
   border: solid #919191;
-  border-width: 0 10px 10px 0;
+  border-width: 0 3px 3px 0;
   border-radius: 10%;
   padding: 20px;
   transition: 0.1s;
@@ -43,7 +50,7 @@
 
 .nav-left .nav-arrow {
   transform: rotate(135deg);
-  margin-right: -1rem;
+  margin-right: -1.5rem;
 }
 
 .nav-down .nav-arrow {
@@ -53,13 +60,13 @@
 
 .nav-right .nav-arrow {
   transform: rotate(-45deg);
-  margin-left: -1rem;
+  margin-left: -1.5rem;
 }
 
 .nav-left,
 .nav-right {
   justify-content: flex-end;
-  position: sticky;
+  position: fixed;
   top: 45vh;
   bottom: 50vh;
   align-self: flex-start;
@@ -68,6 +75,7 @@
 .label {
   font-size: 18px;
   transition: 0.1s;
+  font-weight: 300;
 }
 
 .nav-button:hover .label {

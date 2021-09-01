@@ -79,8 +79,8 @@ const Main = () => {
   });
 
   const renderNavArrow = dir => {
-    const toPath = navigation[curPath][dir];
-    if (toPath) {
+    if (navigation[curPath] && navigation[curPath][dir]) {
+      const toPath = navigation[curPath][dir];
       const label = navigation[toPath].name;
       return (
         <NavArrow
@@ -109,7 +109,6 @@ const Main = () => {
       <NavMenu />
 
       <div className='page-content fade-in'>
-        <div className='top-container'>{renderNavArrow('up')}</div>
         <div
           className={`center-container ${
             transition.animate ? `transition-${transition.direction}` : ''
@@ -121,7 +120,6 @@ const Main = () => {
             }
           }}
         >
-          {renderNavArrow('left')}
           <Switch>
             <Route path='/' exact>
               <Home />
@@ -146,9 +144,13 @@ const Main = () => {
             </Route>
             <Redirect from='*' to='/' />
           </Switch>
-          {renderNavArrow('right')}
         </div>
-        <div className='bottom-container'>{renderNavArrow('down')}</div>
+      </div>
+      <div className='arrow-container'>
+        {renderNavArrow('up')}
+        {renderNavArrow('down')}
+        {renderNavArrow('left')}
+        {renderNavArrow('right')}
       </div>
     </div>
   );
