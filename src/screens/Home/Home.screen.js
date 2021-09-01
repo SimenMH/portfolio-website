@@ -2,7 +2,7 @@ import './styles.css';
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='container fade-in'>
       <div className='home-text'>
         <h1>Hello, I am Simen</h1>
         <h2>Full-Stack Web Developer</h2>

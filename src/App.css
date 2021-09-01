@@ -4,18 +4,34 @@
 
 .transition-left {
   animation: slide-right var(--transition-speed) forwards;
+  transform: translateX(0%);
+  transform: translateY(0%);
+  filter: blur(0px);
+  opacity: 100%;
 }
 
 .transition-right {
   animation: slide-left var(--transition-speed) forwards;
+  transform: translateX(0%);
+  transform: translateY(0%);
+  filter: blur(0px);
+  opacity: 100%;
 }
 
 .transition-up {
   animation: slide-down var(--transition-speed) forwards;
+  transform: translateX(0%);
+  transform: translateY(0%);
+  filter: blur(0px);
+  opacity: 100%;
 }
 
 .transition-down {
   animation: slide-up var(--transition-speed) forwards;
+  transform: translateX(0%);
+  transform: translateY(0%);
+  filter: blur(0px);
+  opacity: 100%;
 }
 
 @keyframes slide-left {
@@ -65,6 +81,9 @@
 .fade-in {
   animation: fade-in 1s forwards;
 }
+.fade-out {
+  animation: fade-out 1s forwards;
+}
 
 @keyframes fade-in {
   0% {
@@ -73,5 +92,17 @@
   }
   100% {
     filter: blur(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    filter: blur(0px);
+    opacity: 100%;
+  }
+  100% {
+    filter: blur(4px);
+    opacity: 0%;
   }
 }

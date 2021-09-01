@@ -2,7 +2,7 @@ import './styles.css';
 
 const AboutMe = () => {
   return (
-    <div className='aboutme-container'>
+    <div className='aboutme-container fade-in'>
       <h1>The short version</h1>
       <p>
         Ambitious and optimistic Full-Stack developer with a "nothing is

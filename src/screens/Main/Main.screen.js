@@ -88,6 +88,7 @@ const Main = () => {
           label={label}
           path={toPath}
           onClickHandler={startTransition}
+          fade={transition.animate}
         />
       );
     }
@@ -98,7 +99,9 @@ const Main = () => {
   };
 
   const startTransition = direction => {
-    setTransition({ animate: true, direction });
+    if (!transition.animate) {
+      setTransition({ animate: true, direction });
+    }
   };
 
   return (
@@ -111,9 +114,11 @@ const Main = () => {
           className={`center-container ${
             transition.animate ? `transition-${transition.direction}` : ''
           }`}
-          onAnimationEnd={() => {
-            goToScreen(transition.direction);
-            setTransition({ animate: false, direction: null });
+          onAnimationEnd={e => {
+            if (e.animationName.startsWith('slide')) {
+              goToScreen(transition.direction);
+              setTransition({ animate: false, direction: null });
+            }
           }}
         >
           {renderNavArrow('left')}
