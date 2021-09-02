@@ -98,7 +98,7 @@ const App = () => {
         {renderNavArrow('right')}
       </div>
 
-      <div className='page-content fade-in'>
+      <div className='page-content'>
         <div
           className={`center-container ${
             transition.animate ? `transition-${transition.direction}` : ''

@@ -1,5 +1,4 @@
 .nav-button {
-  position: absolute;
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
@@ -12,16 +11,12 @@
 }
 
 .nav-up {
-  width: 100%;
   flex-direction: column-reverse;
-  top: 0rem;
   padding-top: 1rem;
 }
 
 .nav-down {
-  width: 100%;
   flex-direction: column;
-  bottom: 0;
   padding-bottom: 1rem;
 }
 
