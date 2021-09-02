@@ -181,8 +181,7 @@
 }
 
 .screen-container {
-  margin-right: 15%;
-  margin-left: 5%;
+  margin: 0 75px;
   width: 100%;
 }
 
@@ -211,11 +210,4 @@
   font-weight: 400;
   font-size: 20px;
   margin-left: 10px;
-}
-
-.half {
-  width: 49%;
-  margin-left: 2%;
-  float: left;
-  clear: none;
 }
