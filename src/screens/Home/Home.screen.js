@@ -4,14 +4,10 @@ const Home = () => {
   return (
     <div className='container fade-in'>
       <div className='home-text'>
-        <h1>Hello, I am Simen</h1>
-        <h2>Full-Stack Web Developer</h2>
+        <h1>Hi, I'm Simen</h1>
+        <h1>Software Engineer</h1>
         <div className='line-seperator' />
-        <p>
-          Welcome to the (work in progress) portfolio website of a{' '}
-          <span className='cool-adjective'>{'{ coolAdjective }'}</span> web
-          developer
-        </p>
+        <h2>A Full Stack / Front End web developer from Norway.</h2>
       </div>
       {/* <div className='status-container'>
         <div className='status'>
