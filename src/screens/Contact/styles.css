@@ -1,0 +1,87 @@
+.contact-container {
+  width: 40vw;
+}
+
+.input-field {
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  border: 0;
+  background: #2e2e2e;
+  font-size: 16px;
+  color: rgb(200, 200, 200);
+  outline: none;
+}
+
+.contact-form ul {
+  padding: 0;
+}
+
+.contact-form li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+}
+.contact-form li.half {
+  width: 49%;
+  margin-left: 2%;
+  float: left;
+  clear: none;
+}
+
+.contact-form li.half:first-child {
+  margin-left: 0;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 20px;
+  min-height: 150px;
+  font-family: Arial;
+  resize: none;
+}
+
+.input-focus {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 2px solid rgb(125, 171, 190);
+  transition: 0.5s;
+}
+
+.input-field:focus + .input-focus {
+  width: 100%;
+}
+
+.submit-button {
+  cursor: pointer;
+  width: fit-content;
+  height: 40px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(77, 128, 151);
+  transition: 0.2s;
+  color: rgb(125, 171, 190);
+}
+
+.submit-button p {
+  margin: 1px;
+  font-weight: 400;
+  text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.616);
+}
+
+.submit-button:hover {
+  background: rgb(77, 128, 151);
+  color: rgb(216, 216, 216);
+}
