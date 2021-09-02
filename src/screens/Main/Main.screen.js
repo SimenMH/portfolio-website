@@ -21,23 +21,16 @@ import GamePortfolio from '../Portfolio/GamePortfolio/GamePortfolio.screen';
 const navigation = {
   '/': {
     name: 'Home',
-    up: null,
     down: '/portfolio',
     left: '/contact',
     right: '/about',
   },
   '/about': {
     name: 'About Me',
-    up: null,
-    down: null,
     left: '/',
-    right: null,
   },
   '/contact': {
     name: 'Contact',
-    up: null,
-    down: null,
-    left: null,
     right: '/',
   },
   '/portfolio': {
@@ -50,23 +43,14 @@ const navigation = {
   '/portfolio/web': {
     name: 'Web apps',
     up: '/portfolio',
-    down: null,
-    left: null,
-    right: null,
   },
   '/portfolio/mobile': {
     name: 'Mobile apps',
-    up: null,
-    down: null,
-    left: null,
     right: '/portfolio',
   },
   '/portfolio/games': {
     name: 'Video Games',
-    up: null,
-    down: null,
     left: '/portfolio',
-    right: null,
   },
 };
 
