@@ -212,3 +212,10 @@
   font-size: 20px;
   margin-left: 10px;
 }
+
+.half {
+  width: 49%;
+  margin-left: 2%;
+  float: left;
+  clear: none;
+}
