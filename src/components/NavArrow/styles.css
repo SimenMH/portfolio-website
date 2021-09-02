@@ -17,6 +17,7 @@
 
 .nav-down {
   flex-direction: column;
+  margin-top: auto;
   padding-bottom: 1rem;
 }
 
