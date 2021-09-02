@@ -9,6 +9,9 @@ const Home = () => {
         <div className='line-seperator' />
         <h2>A Full Stack / Front End web developer from Norway.</h2>
       </div>
+      <div className='primary-button resume-button'>
+        <p>Download Resume</p>
+      </div>
       {/* <div className='status-container'>
         <div className='status'>
           <h2>I am currently</h2>
