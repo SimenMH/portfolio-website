@@ -3,17 +3,7 @@ import './styles.css';
 const AboutMe = () => {
   return (
     <div className='aboutme-container fade-in'>
-      <h1>The short version</h1>
-      <p>
-        Ambitious and optimistic Full-Stack developer with a "nothing is
-        impossible" attitude.
-      </p>
-      <p>
-        Programmed as a hobby for 9 years. It's still a hobby, now I just get
-        paid.
-      </p>
-      <p>Other passions include animals, nature, and food.</p>
-      <h1>The rambling version</h1>
+      <h1>Who am I?</h1>
       <p>Full-stack developer located in the frozen wastes of Norway.</p>
       <p>
         I began my programming journey in 2012, when I wrote my very first Hello
@@ -45,6 +35,42 @@ const AboutMe = () => {
         alongside my best bud Biscuit, enjoying the tranquility that Norwegian
         nature has to offer.
       </p>
+      <h1>Skills</h1>
+      <div className='skills-container'>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>JavaScript</h3>
+          <p>I use JavaScript to make cool things</p>
+        </div>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>JavaScript</h3>
+          <p>
+            I use JavaScript to make cool thingsasoid hgadi adlk ajdl kajd lk
+            asjda pjapodjaspdoa jdpoaj dæpoiasjd æpsojfspæofj
+          </p>
+        </div>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>JavaScript</h3>
+          <p>I use JavaScript to make cool things</p>
+        </div>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>JavaScript</h3>
+          <p>I use JavaScript to make cool things</p>
+        </div>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>JavaScript</h3>
+          <p>I use JavaScript to make cool things</p>
+        </div>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>JavaScript</h3>
+          <p>I use JavaScript to make cool things</p>
+        </div>
+      </div>
     </div>
   );
 };
