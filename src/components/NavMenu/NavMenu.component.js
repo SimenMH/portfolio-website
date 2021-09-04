@@ -17,7 +17,7 @@ const menuItems = [
   { name: 'Contact', path: '/contact', submenu: false },
 ];
 
-const NavMenu = props => {
+const NavMenu = () => {
   const curPath = useLocation().pathname;
   const [showMenu, setShowMenu] = useState(false);
 
@@ -39,7 +39,7 @@ const NavMenu = props => {
             <h2>{item.name}</h2>
           </Link>
           {item.submenu &&
-            item.submenu.map((item, index, arr) => {
+            item.submenu.map(item => {
               return (
                 <Link
                   className={`menu-item submenu-item ${
