@@ -40,35 +40,50 @@ const AboutMe = () => {
         <div className='skill'>
           <div className='skill-icon' />
           <h3>JavaScript</h3>
-          <p>I use JavaScript to make cool things</p>
-        </div>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>JavaScript</h3>
           <p>
-            I use JavaScript to make cool thingsasoid hgadi adlk ajdl kajd lk
-            asjda pjapodjaspdoa jdpoaj dæpoiasjd æpsojfspæofj
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            enim varius, ullamcorper eros sed, condimentum eros.
           </p>
         </div>
         <div className='skill'>
           <div className='skill-icon' />
-          <h3>JavaScript</h3>
-          <p>I use JavaScript to make cool things</p>
+          <h3>HTML5</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            enim varius, ullamcorper eros sed, condimentum eros.
+          </p>
         </div>
         <div className='skill'>
           <div className='skill-icon' />
-          <h3>JavaScript</h3>
-          <p>I use JavaScript to make cool things</p>
+          <h3>CSS3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            enim varius, ullamcorper eros sed, condimentum eros.
+          </p>
         </div>
         <div className='skill'>
           <div className='skill-icon' />
-          <h3>JavaScript</h3>
-          <p>I use JavaScript to make cool things</p>
+          <h3>React</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            enim varius, ullamcorper eros sed, condimentum eros.
+          </p>
         </div>
         <div className='skill'>
           <div className='skill-icon' />
-          <h3>JavaScript</h3>
-          <p>I use JavaScript to make cool things</p>
+          <h3>Angular</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            enim varius, ullamcorper eros sed, condimentum eros.
+          </p>
+        </div>
+        <div className='skill'>
+          <div className='skill-icon' />
+          <h3>SASS</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            enim varius, ullamcorper eros sed, condimentum eros.
+          </p>
         </div>
       </div>
     </div>
