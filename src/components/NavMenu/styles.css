@@ -62,7 +62,7 @@
   background: linear-gradient(
     56.35deg,
     rgb(57, 78, 85) -190%,
-    rgb(61, 61, 61) 50%,
+    rgb(46, 46, 46) 50%,
     rgb(58, 41, 41) 190%
   );
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -95,7 +95,7 @@
 }
 
 .current-menu-item {
-  background-color: rgba(34, 34, 34, 0.472);
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
 .menu-list-line {
