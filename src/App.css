@@ -9,7 +9,7 @@
     #2e4142 115%
   );
   display: flex;
-  animation: fade-in 2s forwards;
+  animation: fade-in 4s forwards;
 }
 
 .page-content {
@@ -134,11 +134,11 @@
 
 @keyframes fade-in {
   0% {
-    filter: blur(4px);
+    /* filter: blur(4px); */
     opacity: 0%;
   }
   100% {
-    filter: blur(0px);
+    /* filter: blur(0px); */
     opacity: 100%;
   }
 }

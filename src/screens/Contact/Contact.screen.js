@@ -11,7 +11,7 @@ const Contact = () => {
       </p>
       <form className='contact-form'>
         <ul>
-          <li className='half'>
+          <li>
             <input
               className='input-field'
               placeholder='Name'
@@ -20,7 +20,7 @@ const Contact = () => {
             />
             <div className='input-focus' />
           </li>
-          <li className='half'>
+          <li>
             <input
               className='input-field'
               placeholder='Email (Optional)'
@@ -28,11 +28,11 @@ const Contact = () => {
             />
             <div className='input-focus' />
           </li>
-          <li>
+          <li className='form-grid-full'>
             <input className='input-field' placeholder='Subject' type='text' />
             <div className='input-focus' />
           </li>
-          <li>
+          <li className='form-grid-full'>
             <textarea
               className='input-field'
               placeholder='Message'
@@ -40,7 +40,7 @@ const Contact = () => {
             />
             <div className='input-focus' />
           </li>
-          <li>
+          <li className='form-grid-submit'>
             <div className='submit-button'>
               <p>Send message</p>
             </div>

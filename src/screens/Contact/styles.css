@@ -14,28 +14,29 @@
 }
 
 .contact-form ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px 10px;
   padding: 0;
+}
+
+.form-grid-full {
+  grid-column: span 2;
+}
+
+.form-grid-submit {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .contact-form li {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 10px;
   overflow: hidden;
   display: block;
   clear: both;
   position: relative;
-}
-.contact-form li.half {
-  width: 49%;
-  margin-left: 2%;
-  float: left;
-  clear: none;
-}
-
-.contact-form li.half:first-child {
-  margin-left: 0;
 }
 
 .contact-form textarea {
