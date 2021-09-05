@@ -10,42 +10,40 @@ const Contact = () => {
         form!
       </p>
       <form className='contact-form'>
-        <ul>
-          <li>
-            <input
-              className='input-field'
-              placeholder='Name'
-              type='text'
-              required={true}
-            />
-            <div className='input-focus' />
-          </li>
-          <li>
-            <input
-              className='input-field'
-              placeholder='Email (Optional)'
-              type='email'
-            />
-            <div className='input-focus' />
-          </li>
-          <li className='form-grid-full'>
-            <input className='input-field' placeholder='Subject' type='text' />
-            <div className='input-focus' />
-          </li>
-          <li className='form-grid-full'>
-            <textarea
-              className='input-field'
-              placeholder='Message'
-              required={true}
-            />
-            <div className='input-focus' />
-          </li>
-          <li className='form-grid-submit'>
-            <div className='submit-button'>
-              <p>Send message</p>
-            </div>
-          </li>
-        </ul>
+        <div className='form-grid-item form-grid-half'>
+          <input
+            className='input-field'
+            placeholder='Name'
+            type='text'
+            required={true}
+          />
+          <label className='input-focus' />
+        </div>
+        <div className='form-grid-item form-grid-half'>
+          <input
+            className='input-field'
+            placeholder='Email (Optional)'
+            type='email'
+          />
+          <label className='input-focus' />
+        </div>
+        <div className='form-grid-item'>
+          <input className='input-field' placeholder='Subject' type='text' />
+          <label className='input-focus' />
+        </div>
+        <div className='form-grid-item'>
+          <textarea
+            className='input-field'
+            placeholder='Message'
+            required={true}
+          />
+          <label className='input-focus' />
+        </div>
+        {/* <div className='form-grid-submit'> */}
+        <div className='submit-button'>
+          <p>Send message</p>
+        </div>
+        {/* </div> */}
       </form>
     </div>
   );
