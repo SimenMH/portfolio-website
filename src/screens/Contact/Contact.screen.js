@@ -39,11 +39,9 @@ const Contact = () => {
           />
           <label className='input-focus' />
         </div>
-        {/* <div className='form-grid-submit'> */}
-        <div className='submit-button'>
+        <div className='form-grid-item submit-button'>
           <p>Send message</p>
         </div>
-        {/* </div> */}
       </form>
     </div>
   );
