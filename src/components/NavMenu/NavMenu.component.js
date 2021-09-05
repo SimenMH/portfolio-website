@@ -26,9 +26,9 @@ const NavMenu = () => {
   };
 
   const renderMenuItems = () => {
-    return menuItems.map((item, index, arr) => {
+    return menuItems.map((item, idx, arr) => {
       return (
-        <div className='menu-item-container'>
+        <div className='menu-item-container' key={idx}>
           <Link
             className={`menu-item ${
               item.path === curPath ? 'current-menu-item' : ''
@@ -39,7 +39,7 @@ const NavMenu = () => {
             <h2>{item.name}</h2>
           </Link>
           {item.submenu &&
-            item.submenu.map(item => {
+            item.submenu.map((item, idx) => {
               return (
                 <Link
                   className={`menu-item submenu-item ${
@@ -47,6 +47,7 @@ const NavMenu = () => {
                   }`}
                   to={item.path}
                   onClick={() => setShowMenu(false)}
+                  key={idx}
                 >
                   <div className='submenu-list-line' />
                   <h2>
@@ -56,7 +57,7 @@ const NavMenu = () => {
                 </Link>
               );
             })}
-          {index !== arr.length - 1 && <div className='menu-list-line' />}
+          {idx !== arr.length - 1 && <div className='menu-list-line' />}
         </div>
       );
     });
