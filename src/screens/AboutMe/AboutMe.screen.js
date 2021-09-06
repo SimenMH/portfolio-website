@@ -1,4 +1,5 @@
 import './styles.css';
+import { useState } from 'react';
 
 const skillList = [
   {
@@ -127,10 +128,24 @@ const skillList = [
 ];
 
 const AboutMe = () => {
+  const [skillsIdx, setSkillsIdx] = useState(0);
+
+  const cycleSkills = dir => {
+    setSkillsIdx(curIdx => {
+      if (curIdx + dir > skillList.length - 1) {
+        return 0;
+      } else if (curIdx + dir < 0) {
+        return skillList.length - 1;
+      }
+      return (curIdx += dir);
+    });
+  };
+
   return (
     <div className='aboutme-container fade-in'>
-      <h1>A Little About Me</h1>
-      <div className='about-text'>
+      <section className='aboutme-text-section'>
+        <h1>A Little About Me</h1>
+
         <p>
           Full-stack developer located in Norway. I have been programming since
           2012, and have a serious passion for building unique projects and
@@ -147,21 +162,33 @@ const AboutMe = () => {
           love working on ambitious and impactful projects with positive and
           motivated people.
         </p>
-      </div>
-      <div className='skills-container'>
+      </section>
+      <br />
+      <section className='aboutme-skills-section'>
         <h1>Highlighted Skills</h1>
-        <div className='skills-grid'>
-          {skillList[2].skills.map(skill => {
-            return (
-              <div className='skill'>
-                <div className='skill-icon' />
-                <h3>{skill.name}</h3>
-                <p>{skill.description}</p>
-              </div>
-            );
-          })}
+        <h3>{skillList[skillsIdx].category}</h3>
+        <div className='skills-container'>
+          <div
+            className='skills-arrow skills-arrow-left'
+            onClick={() => cycleSkills(-1)}
+          />
+          <div className='skills-grid'>
+            {skillList[skillsIdx].skills.map(skill => {
+              return (
+                <div className='skill'>
+                  <div className='skill-icon' />
+                  <h3>{skill.name}</h3>
+                  <p>{skill.description}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div
+            className='skills-arrow skills-arrow-right'
+            onClick={() => cycleSkills(1)}
+          />
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -1,32 +1,46 @@
-.aboutme-container {
-  margin-left: 5%;
-  width: 100%;
-}
-
 .aboutme-container h1 {
   font-size: 48px;
-  /* font-family: Arial, Helvetica, sans-serif; */
   color: rgb(125, 190, 190);
   font-weight: 600;
 }
 
-.aboutme-container p {
+.aboutme-text-section {
+  margin-left: 5%;
+  width: 50%;
+}
+
+.aboutme-text-section p {
   font-weight: 400;
   font-size: 18px;
+}
+
+.aboutme-skills-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: ; */
+  align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-grid {
   width: 100%;
   display: grid;
+  justify-content: center;
   grid-template-columns: 33% 33% 33%;
+  max-width: 1100px;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   margin: 15px;
-  max-width: 310px;
 }
 
 .skill-icon {
@@ -52,6 +66,20 @@
   line-height: 20px;
 }
 
-.about-text {
-  width: 50%;
+.skills-arrow {
+  height: 10px;
+  width: 10px;
+  border: solid rgb(162, 174, 177);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.skills-arrow-right {
+  transform: rotate(-45deg);
+}
+
+.skills-arrow-left {
+  transform: rotate(135deg);
 }
