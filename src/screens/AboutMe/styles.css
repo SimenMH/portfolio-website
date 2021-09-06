@@ -4,8 +4,9 @@
 
 .aboutme-container h1 {
   font-size: 36px;
-  color: rgb(125, 190, 190);
   font-weight: 600;
+  color: rgb(125, 190, 190);
+  margin-top: 0;
 }
 
 .aboutme-text-section {
