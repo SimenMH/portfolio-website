@@ -12,14 +12,6 @@ const Home = () => {
       <div className='primary-button resume-button'>
         <p>Download Resume</p>
       </div>
-      {/* <div className='status-container'>
-        <div className='status'>
-          <h2>I am currently</h2>
-          <div className='current-status'>
-            <h2>looking for work!</h2>
-          </div>
-        </div>
-      </div> */}
       <div className='some-links'>
         <a
           href='https://github.com/SimenMH//'
