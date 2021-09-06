@@ -1,23 +1,22 @@
 .aboutme-container {
-  margin-right: 15%;
   margin-left: 5%;
   width: 100%;
 }
 
 .aboutme-container h1 {
   font-size: 48px;
-  color: rgb(125, 171, 190);
-  font-weight: 400;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: rgb(125, 190, 190);
+  font-weight: 600;
 }
 
 .aboutme-container p {
   font-weight: 400;
-  font-size: 20px;
-  margin-left: 10px;
+  font-size: 18px;
 }
 
 .skills-container {
-  margin-left: 10px;
+  width: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
@@ -51,4 +50,8 @@
   margin: 0;
   text-align: center;
   line-height: 20px;
+}
+
+.about-text {
+  width: 50%;
 }
