@@ -175,10 +175,9 @@ const AboutMe = () => {
         <h1>Highlighted Skills</h1>
         <h3 className='skill-category'>{skillList[skillsIdx].category}</h3>
         <div className='skills-container'>
-          <div
-            className='skills-arrow skills-arrow-left'
-            onClick={() => cycleSkills(-1)}
-          />
+          <div className='skills-cycle-button' onClick={() => cycleSkills(-1)}>
+            <div className='skills-cycle-arrow skills-arrow-left' />
+          </div>
           <div className='skills-grid'>
             {skillList[skillsIdx].skills.map(skill => {
               return (
@@ -196,10 +195,9 @@ const AboutMe = () => {
               );
             })}
           </div>
-          <div
-            className='skills-arrow skills-arrow-right'
-            onClick={() => cycleSkills(1)}
-          />
+          <div className='skills-cycle-button' onClick={() => cycleSkills(1)}>
+            <div className='skills-cycle-arrow skills-arrow-right' />
+          </div>
         </div>
       </section>
     </div>

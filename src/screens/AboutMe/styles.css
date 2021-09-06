@@ -75,14 +75,32 @@
   line-height: 20px;
 }
 
-.skills-arrow {
+.skills-cycle-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.skills-cycle-button:hover {
+  transform: scale(120%);
+}
+
+.skills-cycle-button:hover .skills-cycle-arrow {
+  border-color: rgb(145, 167, 173);
+}
+
+.skills-cycle-arrow {
   height: 10px;
   width: 10px;
-  border: solid rgb(162, 174, 177);
+  border: solid rgb(101, 107, 109);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  cursor: pointer;
+  transition: 0.1s;
 }
 
 .skills-arrow-right {
