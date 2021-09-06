@@ -26,6 +26,11 @@
   justify-content: center;
 }
 
+.skill-category {
+  font-weight: 400;
+  font-size: 24px;
+}
+
 .skills-grid {
   width: 100%;
   display: grid;
@@ -54,11 +59,11 @@
   box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
-.skill h3 {
+.skill-name {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(209, 209, 209);
   font-size: 20px;
-  margin: 5px 0 15px;
+  margin: 15px 0px 10px 0px;
 }
 
 .skill p {

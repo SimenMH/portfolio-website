@@ -173,7 +173,7 @@ const AboutMe = () => {
       <br />
       <section className='aboutme-skills-section'>
         <h1>Highlighted Skills</h1>
-        <h3>{skillList[skillsIdx].category}</h3>
+        <h3 className='skill-category'>{skillList[skillsIdx].category}</h3>
         <div className='skills-container'>
           <div
             className='skills-arrow skills-arrow-left'
@@ -190,7 +190,7 @@ const AboutMe = () => {
                       style={{ width: '100%', height: '100%' }}
                     />
                   </div>
-                  <h3>{skill.name}</h3>
+                  <h3 className='skill-name'>{skill.name}</h3>
                   <p>{skill.description}</p>
                 </div>
               );
