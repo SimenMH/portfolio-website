@@ -199,6 +199,17 @@ const AboutMe = () => {
             <div className='skills-cycle-arrow skills-arrow-right' />
           </div>
         </div>
+        <div className='category-dots-container'>
+          {skillList.map((_, idx) => {
+            return (
+              <div
+                className={`category-dot ${
+                  idx === skillsIdx ? 'active-category-dot' : ''
+                }`}
+              />
+            );
+          })}
+        </div>
       </section>
     </div>
   );

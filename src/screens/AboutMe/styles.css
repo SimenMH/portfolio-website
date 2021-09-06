@@ -110,3 +110,20 @@
 .skills-arrow-left {
   transform: rotate(135deg);
 }
+
+.category-dots-container {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+}
+
+.category-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.active-category-dot {
+  background-color: rgba(255, 255, 255, 0.75);
+}
