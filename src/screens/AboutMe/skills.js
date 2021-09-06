@@ -5,6 +5,20 @@ import ReactLogo from '../../assets/skill-logos/React-logo.svg';
 import AngularLogo from '../../assets/skill-logos/Angular-logo.svg';
 import SASSLogo from '../../assets/skill-logos/SASS-logo.svg';
 
+import NodeJSLogo from '../../assets/skill-logos/NodeJS-logo.svg';
+import ExpressLogo from '../../assets/skill-logos/Express-logo.svg';
+import SQLLogo from '../../assets/skill-logos/SQL-logo.svg';
+import GraphQLLogo from '../../assets/skill-logos/GraphQL-logo.svg';
+import MongoDB from '../../assets/skill-logos/MongoDB-logo.svg';
+import RESTLogo from '../../assets/skill-logos/REST-logo.svg';
+
+import PythonLogo from '../../assets/skill-logos/Python-logo.svg';
+import CsharpLogo from '../../assets/skill-logos/Csharp-logo.svg';
+import gitLogo from '../../assets/skill-logos/git-logo.svg';
+import DockerLogo from '../../assets/skill-logos/Docker-logo.svg';
+import AgileLogo from '../../assets/skill-logos/Agile-logo.svg';
+import UnityLogo from '../../assets/skill-logos/Unity-logo.svg';
+
 const skills = [
   {
     category: 'Frontend',
@@ -54,37 +68,37 @@ const skills = [
         name: 'NodeJS',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: NodeJSLogo,
       },
       {
         name: 'Express',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: ExpressLogo,
       },
       {
         name: 'SQL',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: SQLLogo,
       },
       {
         name: 'GraphQL',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: GraphQLLogo,
       },
       {
         name: 'MongoDB',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: MongoDB,
       },
       {
         name: 'REST APIs',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: RESTLogo,
       },
     ],
   },
@@ -95,37 +109,37 @@ const skills = [
         name: 'Python',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: PythonLogo,
       },
       {
         name: 'C#',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: CsharpLogo,
       },
       {
         name: 'Git',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: gitLogo,
       },
       {
         name: 'Docker',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: DockerLogo,
       },
       {
         name: 'Agile',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: AgileLogo,
       },
       {
         name: 'Game Development',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: UnityLogo,
       },
     ],
   },
