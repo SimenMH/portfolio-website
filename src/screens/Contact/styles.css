@@ -96,9 +96,9 @@
 }
 
 .envelope polyline {
-  fill: rgb(97, 121, 136);
-  stroke: rgb(68, 76, 98);
-  stroke-width: 1px;
+  fill: rgb(76, 92, 102);
+  stroke: rgb(175, 175, 175);
+  stroke-width: 2px;
 }
 
 .envelope-top {
@@ -162,7 +162,7 @@
 
 .hide-form {
   pointer-events: none;
-  animation: hide-form 3s forwards;
+  animation: hide-form 2s forwards;
 }
 
 @keyframes envelope-animate {
@@ -175,7 +175,7 @@
   }
   100% {
     opacity: 0%;
-    transform: translateX(-200%);
+    transform: translateX(-125%);
   }
 }
 
@@ -222,7 +222,7 @@
   26% {
     opacity: 0%;
   }
-  50% {
+  70% {
     opacity: 0%;
   }
   100% {
