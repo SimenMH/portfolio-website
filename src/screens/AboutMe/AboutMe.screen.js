@@ -135,10 +135,10 @@ const skillList = [
 ];
 
 const AboutMe = () => {
-  const [skillsIdx, setSkillsIdx] = useState(0);
+  const [categoryIdx, setCategoryIdx] = useState(0);
 
-  const cycleSkills = dir => {
-    setSkillsIdx(curIdx => {
+  const cycleCategory = dir => {
+    setCategoryIdx(curIdx => {
       if (curIdx + dir > skillList.length - 1) {
         return 0;
       } else if (curIdx + dir < 0) {
@@ -173,13 +173,16 @@ const AboutMe = () => {
       <br />
       <section className='aboutme-skills-section'>
         <h1>Highlighted Skills</h1>
-        <h3 className='skill-category'>{skillList[skillsIdx].category}</h3>
+        <h3 className='skill-category'>{skillList[categoryIdx].category}</h3>
         <div className='skills-container'>
-          <div className='skills-cycle-button' onClick={() => cycleSkills(-1)}>
+          <div
+            className='skills-cycle-button'
+            onClick={() => cycleCategory(-1)}
+          >
             <div className='skills-cycle-arrow skills-arrow-left' />
           </div>
           <div className='skills-grid'>
-            {skillList[skillsIdx].skills.map(skill => {
+            {skillList[categoryIdx].skills.map(skill => {
               return (
                 <div className='skill'>
                   <div className='skill-icon'>
@@ -195,7 +198,7 @@ const AboutMe = () => {
               );
             })}
           </div>
-          <div className='skills-cycle-button' onClick={() => cycleSkills(1)}>
+          <div className='skills-cycle-button' onClick={() => cycleCategory(1)}>
             <div className='skills-cycle-arrow skills-arrow-right' />
           </div>
         </div>
@@ -204,7 +207,7 @@ const AboutMe = () => {
             return (
               <div
                 className={`category-dot ${
-                  idx === skillsIdx ? 'active-category-dot' : ''
+                  idx === categoryIdx ? 'active-category-dot' : ''
                 }`}
               />
             );
