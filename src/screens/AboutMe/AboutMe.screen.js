@@ -1,6 +1,13 @@
 import './styles.css';
 import { useState } from 'react';
 
+import JavaScriptLogo from '../../assets/skill-logos/JavaScript-logo.svg';
+import HTML5Logo from '../../assets/skill-logos/HTML5-logo.svg';
+import CSS3Logo from '../../assets/skill-logos/CSS3-logo.svg';
+import ReactLogo from '../../assets/skill-logos/React-logo.svg';
+import AngularLogo from '../../assets/skill-logos/Angular-logo.svg';
+import SASSLogo from '../../assets/skill-logos/SASS-logo.svg';
+
 const skillList = [
   {
     category: 'Frontend',
@@ -9,37 +16,37 @@ const skillList = [
         name: 'JavaScript',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: JavaScriptLogo,
       },
       {
-        name: 'HTML3',
+        name: 'HTML5',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: HTML5Logo,
       },
       {
         name: 'CSS3',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: CSS3Logo,
       },
       {
         name: 'React',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: ReactLogo,
       },
       {
         name: 'Angular',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: AngularLogo,
       },
       {
         name: 'SASS',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: 'path',
+        logo: SASSLogo,
       },
     ],
   },
@@ -176,7 +183,13 @@ const AboutMe = () => {
             {skillList[skillsIdx].skills.map(skill => {
               return (
                 <div className='skill'>
-                  <div className='skill-icon' />
+                  <div className='skill-icon'>
+                    <img
+                      src={skill.logo}
+                      alt={`${skill.name} logo`}
+                      style={{ width: '100%', height: '100%' }}
+                    />
+                  </div>
                   <h3>{skill.name}</h3>
                   <p>{skill.description}</p>
                 </div>
