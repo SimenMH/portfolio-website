@@ -1,5 +1,131 @@
 import './styles.css';
 
+const skillList = [
+  {
+    category: 'Frontend',
+    skills: [
+      {
+        name: 'JavaScript',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'HTML3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'CSS3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'React',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'Angular',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'SASS',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+    ],
+  },
+  {
+    category: 'Backend',
+    skills: [
+      {
+        name: 'NodeJS',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'Express',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'SQL',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'GraphQL',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'MongoDB',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'REST APIs',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+    ],
+  },
+  {
+    category: 'Other',
+    skills: [
+      {
+        name: 'Python',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'C#',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'Git',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'Docker',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'Agile',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+      {
+        name: 'Game Development',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        logo: 'path',
+      },
+    ],
+  },
+];
+
 const AboutMe = () => {
   return (
     <div className='aboutme-container fade-in'>
@@ -22,56 +148,18 @@ const AboutMe = () => {
           motivated people.
         </p>
       </div>
-
-      <h1>What I Work With</h1>
       <div className='skills-container'>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>JavaScript</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-            enim varius, ullamcorper eros sed, condimentum eros.
-          </p>
-        </div>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>HTML5</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-            enim varius, ullamcorper eros sed, condimentum eros.
-          </p>
-        </div>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>CSS3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-            enim varius, ullamcorper eros sed, condimentum eros.
-          </p>
-        </div>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>React</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-            enim varius, ullamcorper eros sed, condimentum eros.
-          </p>
-        </div>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>Angular</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-            enim varius, ullamcorper eros sed, condimentum eros.
-          </p>
-        </div>
-        <div className='skill'>
-          <div className='skill-icon' />
-          <h3>SASS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-            enim varius, ullamcorper eros sed, condimentum eros.
-          </p>
+        <h1>Highlighted Skills</h1>
+        <div className='skills-grid'>
+          {skillList[2].skills.map(skill => {
+            return (
+              <div className='skill'>
+                <div className='skill-icon' />
+                <h3>{skill.name}</h3>
+                <p>{skill.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
