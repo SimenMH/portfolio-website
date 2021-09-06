@@ -1,5 +1,5 @@
 .aboutme-container h1 {
-  font-size: 48px;
+  font-size: 36px;
   color: rgb(125, 190, 190);
   font-weight: 600;
 }
@@ -20,6 +20,11 @@
   align-items: center;
 }
 
+.aboutme-skills-section h1 {
+  margin: 0;
+  margin-top: 30px;
+}
+
 .skills-container {
   display: flex;
   align-items: center;
@@ -29,6 +34,7 @@
 .skill-category {
   font-weight: 400;
   font-size: 24px;
+  margin-bottom: 0;
 }
 
 .skills-grid {
