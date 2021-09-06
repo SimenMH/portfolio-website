@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import JavaScriptLogo from '../../assets/skill-logos/JavaScript-logo.svg';
 import HTML5Logo from '../../assets/skill-logos/HTML5-logo.svg';
 import CSS3Logo from '../../assets/skill-logos/CSS3-logo.svg';
@@ -18,6 +19,7 @@ import gitLogo from '../../assets/skill-logos/git-logo.svg';
 import DockerLogo from '../../assets/skill-logos/Docker-logo.svg';
 import AgileLogo from '../../assets/skill-logos/Agile-logo.svg';
 import UnityLogo from '../../assets/skill-logos/Unity-logo.svg';
+import GodotLogo from '../../assets/skill-logos/Godot-logo.svg';
 
 const skills = [
   {
@@ -139,7 +141,7 @@ const skills = [
         name: 'Game Development',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: UnityLogo,
+        logo: GodotLogo,
       },
     ],
   },
