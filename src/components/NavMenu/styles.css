@@ -1,5 +1,5 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: -200px;
   display: flex;
