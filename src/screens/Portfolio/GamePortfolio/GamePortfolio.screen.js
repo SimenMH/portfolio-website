@@ -4,14 +4,12 @@ const GamePortfolio = () => {
   return (
     <div className='screen-container fade-in'>
       <h1>Coming Soon!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>
-        I am currently working on a multiplayer PvP game to be showcased here
-        soon!
+        Vivamus posuere iaculis diam, a facilisis felis tincidunt eu. Integer
+        hendrerit vulputate erat.
       </p>
-      <p>
-        Meanwhile, please enjoy this short game demo that showcases some of my
-        skill.
-      </p>
+      <h3>Game Playable In Browser</h3>
     </div>
   );
 };

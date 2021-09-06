@@ -5,12 +5,10 @@ const MobilePortfolio = () => {
     <div className='screen-container fade-in'>
       <h1>Neighbourly</h1>
       <p>
-        Neighbourly aims to solve the difficulty of trying to communicate with
-        your closes neighbours.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas.
       </p>
-      <p>
-        The app provides a position based messaging board and event planner.
-      </p>
+      <p>Aliquam sagittis justo ac turpis tempor, vel rutrum tortor ornare.</p>
       <h2>Tech Stack:</h2>
       <p>React Native</p>
       <p>NodeJS / Express</p>

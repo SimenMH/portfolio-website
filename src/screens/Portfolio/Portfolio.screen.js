@@ -4,10 +4,11 @@ const Portfolio = () => {
   return (
     <div className='screen-container fade-in'>
       <h1>My work</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>
-        I have experience with web development, mobile apps, and video games.
+        Vivamus posuere iaculis diam, a facilisis felis tincidunt eu. Integer
+        hendrerit vulputate erat.
       </p>
-      <p>Here you may see some projects from each category.</p>
     </div>
   );
 };
