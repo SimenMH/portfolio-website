@@ -1,10 +1,43 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './styles.css';
 
 const Contact = () => {
   const [animate, setAnimate] = useState(false);
+  const [formInput, setFormInput] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
 
-  const sendMessage = () => {
+  const handleChange = e => {
+    const key = e.target.name;
+    const value = e.target.value;
+    setFormInput(prevState => {
+      const newState = { ...prevState };
+      newState[key] = value;
+      return newState;
+    });
+  };
+
+  const sendMessage = e => {
+    e.preventDefault();
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        { ...formInput, message: formInput.message.replaceAll('\n', '<br>') },
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        function (response) {
+          console.log('SUCCESS! Email sent!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
     setAnimate(true);
   };
 
@@ -58,13 +91,17 @@ const Contact = () => {
 
             <form
               className={`contact-form ${animate ? 'hide-form' : ''}`}
+              onSubmit={e => sendMessage(e)}
               onAnimationEnd={() => setAnimate(false)}
             >
               <div className='form-grid-item form-grid-half'>
                 <input
                   className='input-field'
-                  placeholder='Name'
                   type='text'
+                  placeholder='Name'
+                  value={formInput.name}
+                  onChange={handleChange}
+                  name='name'
                   required={true}
                 />
                 <label className='input-focus' />
@@ -72,16 +109,22 @@ const Contact = () => {
               <div className='form-grid-item form-grid-half'>
                 <input
                   className='input-field'
-                  placeholder='Email (Optional)'
                   type='email'
+                  placeholder='Email (Optional)'
+                  value={formInput.email}
+                  onChange={handleChange}
+                  name='email'
                 />
                 <label className='input-focus' />
               </div>
               <div className='form-grid-item'>
                 <input
                   className='input-field'
-                  placeholder='Subject'
                   type='text'
+                  placeholder='Subject'
+                  value={formInput.subject}
+                  onChange={handleChange}
+                  name='subject'
                 />
                 <label className='input-focus' />
               </div>
@@ -91,17 +134,18 @@ const Contact = () => {
                   placeholder='Message'
                   type='text'
                   required={true}
+                  value={formInput.message}
+                  onChange={handleChange}
+                  name='message'
                 />
                 <label className='input-focus' />
               </div>
+              <input
+                type='submit'
+                className='form-grid-item submit-button'
+                value='Send Message'
+              />
             </form>
-            <button
-              type='submit'
-              className='form-grid-item submit-button'
-              onClick={sendMessage}
-            >
-              <p>Send message</p>
-            </button>
           </div>
         </section>
         <section className='contact-details-section'>
