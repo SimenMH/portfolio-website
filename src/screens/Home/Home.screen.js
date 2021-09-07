@@ -1,4 +1,5 @@
 import './styles.css';
+import CVPDF from '../../assets/Simen Herland - CV.pdf';
 
 const Home = () => {
   return (
@@ -9,9 +10,9 @@ const Home = () => {
         <div className='line-seperator' />
         <h2>A Full Stack / Front End web developer from Norway.</h2>
       </div>
-      <div className='primary-button resume-button'>
+      <a className='primary-button resume-button' href={CVPDF} download>
         <p>Download Resume</p>
-      </div>
+      </a>
       <div className='some-links'>
         <a
           href='https://github.com/SimenMH//'
