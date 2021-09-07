@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.content-container {
+.aboutme-content-container {
   display: flex;
   justify-content: center;
 }
@@ -47,10 +47,15 @@
 }
 
 .get-in-touch {
+  position: relative;
   cursor: pointer;
   color: rgb(140, 214, 214);
   text-decoration: none;
   font-size: 20px;
+}
+
+.get-in-touch:hover .input-focus {
+  width: 100%;
 }
 
 .aboutme-skills-section {

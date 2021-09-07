@@ -20,7 +20,7 @@ const AboutMe = () => {
 
   return (
     <div className='aboutme-container fade-in'>
-      <div className='content-container'>
+      <div className='aboutme-content-container'>
         <section className='aboutme-text-section'>
           <h1>A Little About Me</h1>
           <p>
@@ -41,6 +41,7 @@ const AboutMe = () => {
           </p>
           <Link className='get-in-touch' to='/contact'>
             Get in touch!
+            <label className='input-focus' />
           </Link>
         </section>
         <section className='aboutme-skills-section'>
