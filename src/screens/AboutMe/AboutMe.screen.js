@@ -39,9 +39,11 @@ const AboutMe = () => {
           motivated people.
         </p>
       </section>
-      <br />
       <section className='aboutme-skills-section'>
-        <h1>Highlighted Skills</h1>
+        <h2>
+          My Skills
+          <div className='faded-line-seperator' />
+        </h2>
         <h3 className='skill-category'>{skillList[categoryIdx].category}</h3>
         <div className='skills-container'>
           <div
@@ -62,7 +64,7 @@ const AboutMe = () => {
                     />
                   </div>
                   <h3 className='skill-name'>{skill.name}</h3>
-                  <p>{skill.description}</p>
+                  {/* <p>{skill.description}</p> */}
                 </div>
               );
             })}
@@ -78,6 +80,7 @@ const AboutMe = () => {
                 className={`category-dot ${
                   idx === categoryIdx ? 'active-category-dot' : ''
                 }`}
+                onClick={() => setCategoryIdx(idx)}
               />
             );
           })}

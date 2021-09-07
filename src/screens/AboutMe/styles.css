@@ -1,5 +1,7 @@
 .aboutme-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutme-container h1 {
@@ -10,13 +12,13 @@
 }
 
 .aboutme-text-section {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 45%;
+  margin-right: 25px;
 }
 
 .aboutme-text-section p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .aboutme-skills-section {
@@ -25,9 +27,10 @@
   align-items: center;
 }
 
-.aboutme-skills-section h1 {
+.aboutme-skills-section h2 {
   margin: 0;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  font-size: 28px;
 }
 
 .skills-container {
@@ -39,7 +42,7 @@
 .skill-category {
   font-weight: 400;
   font-size: 24px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .skills-grid {
@@ -56,6 +59,9 @@
   align-items: center;
   justify-items: center;
   margin: 15px;
+  /* Add this on media query */
+  width: 125px;
+  min-height: 155px;
 }
 
 .skill-icon {
@@ -75,6 +81,7 @@
   color: rgb(209, 209, 209);
   font-size: 20px;
   margin: 15px 0px 10px 0px;
+  text-align: center;
 }
 
 .skill p {
@@ -133,6 +140,7 @@
   height: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
 }
 
 .active-category-dot {
