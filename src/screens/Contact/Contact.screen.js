@@ -10,6 +10,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = e => {
     const key = e.target.name;
@@ -21,24 +22,37 @@ const Contact = () => {
     });
   };
 
-  const sendMessage = e => {
+  const sendMessage = async e => {
     e.preventDefault();
-    emailjs
-      .send(
+    setIsSending(true);
+
+    try {
+      const response = await emailjs.send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         { ...formInput, message: formInput.message.replaceAll('\n', '<br>') },
         process.env.REACT_APP_EMAILJS_USER_ID
-      )
-      .then(
-        function (response) {
-          console.log('SUCCESS! Email sent!', response.status, response.text);
-        },
-        function (error) {
-          console.log('FAILED...', error);
-        }
       );
-    setAnimate(true);
+
+      if (response.status === 200) {
+        setTimeout(() => {
+          setFormInput({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
+        }, 750);
+        setAnimate(true);
+      } else {
+        throw new Error('Error sending email');
+      }
+    } catch {
+      alert(
+        'Sending message failed. Try again later or message me directly by email or phone.'
+      );
+    }
+    setIsSending(false);
   };
 
   return (
@@ -96,54 +110,70 @@ const Contact = () => {
             >
               <div className='form-grid-item form-grid-half'>
                 <input
-                  className='input-field'
+                  className={`input-field ${
+                    isSending ? 'input-field-disabled' : ''
+                  }`}
                   type='text'
+                  name='name'
                   placeholder='Name'
                   value={formInput.name}
                   onChange={handleChange}
-                  name='name'
                   required={true}
+                  disabled={isSending}
                 />
                 <label className='input-focus' />
               </div>
               <div className='form-grid-item form-grid-half'>
                 <input
-                  className='input-field'
+                  className={`input-field ${
+                    isSending ? 'input-field-disabled' : ''
+                  }`}
                   type='email'
+                  name='email'
                   placeholder='Email (Optional)'
                   value={formInput.email}
                   onChange={handleChange}
-                  name='email'
+                  disabled={isSending}
                 />
                 <label className='input-focus' />
               </div>
               <div className='form-grid-item'>
                 <input
-                  className='input-field'
+                  className={`input-field ${
+                    isSending ? 'input-field-disabled' : ''
+                  }`}
                   type='text'
+                  name='subject'
                   placeholder='Subject'
                   value={formInput.subject}
                   onChange={handleChange}
-                  name='subject'
+                  required={true}
+                  disabled={isSending}
                 />
                 <label className='input-focus' />
               </div>
               <div className='form-grid-item'>
                 <textarea
-                  className='input-field'
-                  placeholder='Message'
+                  className={`input-field ${
+                    isSending ? 'input-field-disabled' : ''
+                  }`}
                   type='text'
-                  required={true}
+                  name='message'
+                  placeholder='Message'
                   value={formInput.message}
                   onChange={handleChange}
-                  name='message'
+                  required={true}
+                  disabled={isSending}
                 />
                 <label className='input-focus' />
               </div>
               <input
                 type='submit'
-                className='form-grid-item submit-button'
+                className={`form-grid-item submit-button ${
+                  isSending ? 'submit-button-disabled' : ''
+                }`}
                 value='Send Message'
+                disabled={isSending}
               />
             </form>
           </div>

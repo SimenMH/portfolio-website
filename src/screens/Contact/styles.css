@@ -100,6 +100,10 @@
   transition: 0.5s;
 }
 
+.input-field-disabled {
+  color: gray;
+}
+
 .input-field:focus + .input-focus {
   width: 100%;
 }
@@ -120,6 +124,17 @@
   border: 2px solid rgb(77, 128, 151);
   transition: 0.2s;
   color: rgb(125, 171, 190);
+  font-weight: 400;
+  font-size: 18px;
+  text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.616);
+}
+
+.submit-button-disabled {
+  background-color: #2e2e2e;
+  border-color: rgba(79, 79, 87, 0);
+
+  color: gray;
+  cursor: not-allowed;
 }
 
 .submit-button p {
@@ -132,6 +147,12 @@
 .submit-button:hover {
   background: rgb(77, 128, 151);
   color: rgb(216, 216, 216);
+}
+
+.submit-button-disabled:hover {
+  background-color: #2e2e2e;
+  border-color: rgb(79, 79, 87);
+  color: gray;
 }
 
 .envelope {
