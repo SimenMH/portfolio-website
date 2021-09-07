@@ -62,9 +62,8 @@ const Contact = () => {
           <div className='form-text-container'>
             <h1>Contact me</h1>
             <p>
-              Whether you're interested in hiring me for your next ambitious
-              project, or just want to drop me an anonymous message, don't
-              hesitate to use this form!
+              Whether you're interested in hiring me, or just want to drop me an
+              anonymous message, don't hesitate to use this form!
             </p>
           </div>
           <div className='form-container'>
@@ -189,8 +188,8 @@ const Contact = () => {
             <p>Time zone: GMT+1</p>
           </div>
           <p>
-            I am currenlty interested in jobs within commuting distance of
-            Bergen or remote work.
+            I am currently interested in jobs within commuting distance of
+            Bergen, or remote work.
           </p>
           <div className='some-links'>
             <a
