@@ -114,21 +114,21 @@
 @keyframes arrow-fade-in {
   0% {
     filter: blur(4px);
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
     filter: blur(0px);
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
 @keyframes arrow-fade-out {
   0% {
     filter: blur(0px);
-    opacity: 100%;
+    opacity: 1;
   }
   100% {
     filter: blur(4px);
-    opacity: 0%;
+    opacity: 0;
   }
 }

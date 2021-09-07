@@ -140,7 +140,7 @@
   width: 600px;
   height: 280px;
   overflow: hidden;
-  opacity: 0%;
+  opacity: 0;
   display: none;
 }
 
@@ -216,14 +216,14 @@
 
 @keyframes envelope-animate {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateX(0%);
   }
   100% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateX(-125%);
   }
 }
@@ -266,16 +266,16 @@
 
 @keyframes hide-form {
   25% {
-    opacity: 100%;
+    opacity: 1;
   }
   26% {
-    opacity: 0%;
+    opacity: 0;
   }
   70% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
