@@ -46,7 +46,7 @@ const AboutMe = () => {
         </section>
         <section className='aboutme-skills-section'>
           <h2>
-            My Skills
+            Highlighted Skills
             <div className='faded-line-seperator' />
           </h2>
           <h3 className='skill-category'>{skillList[categoryIdx].category}</h3>
