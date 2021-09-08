@@ -68,7 +68,6 @@ const AboutMe = () => {
                         className={`skill-icon-img ${
                           skill.size ? skill.size : ''
                         }`}
-                        // style={{ width: '100%', height: '100%' }}
                       />
                     </div>
                     <h3 className='skill-name'>{skill.name}</h3>
