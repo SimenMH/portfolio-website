@@ -1,9 +1,9 @@
 .menu {
   position: fixed;
-  top: 20px;
-  left: -200px;
   display: flex;
   flex-direction: row-reverse;
+  top: 20px;
+  left: -200px;
   transition: 0.3s;
   z-index: 20;
 }
@@ -12,8 +12,14 @@
   left: 0px;
 }
 
+.menu-show .menu-list {
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
 .menu-button {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 55px;
   height: 53px;
   background: linear-gradient(
@@ -22,10 +28,8 @@
     rgb(72, 73, 68) 55%,
     rgb(105, 29, 24) 185%
   );
+  margin-top: 20px;
   border-radius: 0px 25px 25px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -36,11 +40,11 @@
 }
 
 .menu-line-container {
-  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 70%;
   margin-left: 2px;
 }
 
@@ -52,8 +56,8 @@
     rgba(255, 255, 255, 0.64) 0%,
     rgba(255, 255, 255, 0.48) 100%
   );
-  border-radius: 1px 5px 5px 1px;
   margin-right: 10px;
+  border-radius: 1px 5px 5px 1px;
 }
 
 .menu-list {
@@ -67,27 +71,27 @@
   );
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-left: none;
-  box-sizing: border-box;
-  box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 0px 5px 5px 0px;
+  box-sizing: border-box;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .menu-item h2 {
-  margin-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
   font-size: 28px;
   font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }
 
 .menu-item:hover {
@@ -112,14 +116,14 @@
 
 .submenu-item h2 {
   display: flex;
-  font-size: 18px;
   align-items: center;
+  font-size: 18px;
 }
 
 .submenu-dot {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
   margin-right: 10px;
+  border-radius: 50%;
 }
