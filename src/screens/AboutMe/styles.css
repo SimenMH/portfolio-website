@@ -118,6 +118,21 @@
   box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
+.skill-icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-img-large {
+  width: 130%;
+  height: 130%;
+}
+
+.skill-img-xlarge {
+  width: 150%;
+  height: 150%;
+}
+
 .skill-name {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(209, 209, 209);

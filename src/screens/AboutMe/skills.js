@@ -71,12 +71,14 @@ const skills = [
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
         logo: NodeJSLogo,
+        size: 'skill-img-large',
       },
       {
         name: 'Express',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
         logo: ExpressLogo,
+        size: 'skill-img-xlarge',
       },
       {
         name: 'SQL',
@@ -101,6 +103,7 @@ const skills = [
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
         logo: RESTLogo,
+        size: 'skill-img-large',
       },
     ],
   },
