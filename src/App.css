@@ -9,6 +9,7 @@
     #252a2b 85%,
     #2e4142 115%
   );
+  animation: fade-in 3.5s;
 }
 
 .page-content {
@@ -16,7 +17,6 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  animation: fade-in 4s;
 }
 
 .top-container {
