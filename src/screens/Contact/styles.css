@@ -1,12 +1,14 @@
 .contact-container {
   width: 100%;
+  margin-right: 145px;
+  margin-left: 75px;
 }
 
 .contact-content-container {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 200px;
-  margin-right: 200px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
 }
 
 .form-text-container {
@@ -317,12 +319,35 @@
 }
 
 .contact-details-section .some-links {
-  width: 13rem;
+  width: 200px;
 }
 
 .contact-details-section .link-icon {
   width: 50px;
   height: 50px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .contact-details-section {
+    width: 350px;
+  }
+
+  .contact-details-section h2 {
+    font-size: 22px;
+  }
+
+  .contact-details-section p {
+    font-size: 16px;
+  }
+
+  .contact-details-section .some-links {
+    width: 150px;
+  }
+
+  .contact-details-section .link-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media only screen and (min-width: 2200px) {

@@ -1,10 +1,14 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-bottom: 115px;
+  /* margin-top: 10vh; */
+  margin-left: 145px;
+  margin-right: 145px;
 }
 
 .home-text {
@@ -13,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 95px;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .home-text h1 {
@@ -71,8 +75,6 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 320px;
-  margin-bottom: 5vh;
-  margin-top: 2vh;
 }
 
 .link-icon {
@@ -117,8 +119,19 @@
 }
 
 .resume-button {
-  margin-top: 7vh;
+  margin-top: 10vh;
   text-decoration: none;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .home-text h1 {
+    font-size: 64px;
+  }
+
+  .home-text h2 {
+    font-size: 28px;
+  }
 }
 
 @media only screen and (min-width: 2200px) {
