@@ -5,6 +5,8 @@
 .contact-content-container {
   display: flex;
   justify-content: space-evenly;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .form-text-container {
@@ -297,8 +299,7 @@
 
 .contact-details-section {
   width: 400px;
-  margin-top: 40px;
-  margin-left: 100px;
+  margin-top: 75px;
 }
 
 .contact-details-section h2 {
@@ -339,11 +340,6 @@
   .submit-button {
     height: 45px;
     font-size: 18px;
-  }
-
-  .contact-details-section {
-    margin-left: 0;
-    margin-right: 100px;
   }
 
   .envelope {
