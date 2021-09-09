@@ -200,3 +200,50 @@
 .active-category-dot {
   background-color: rgba(255, 255, 255, 0.75);
 }
+
+@media only screen and (min-width: 2200px) {
+  .aboutme-container h1 {
+    font-size: 54px;
+  }
+
+  .aboutme-text-section {
+    width: 40%;
+    margin-right: 40px;
+  }
+
+  .aboutme-text-section p {
+    font-size: 24px;
+  }
+
+  .get-in-touch {
+    font-size: 24px;
+  }
+
+  .aboutme-skills-section h2 {
+    font-size: 32px;
+  }
+
+  .skill-category {
+    font-size: 28px;
+  }
+
+  .skill {
+    width: 135px;
+    min-height: 160px;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skills-cycle-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skills-cycle-arrow {
+    width: 15px;
+    height: 15px;
+  }
+}
