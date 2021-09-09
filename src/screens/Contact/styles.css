@@ -300,6 +300,7 @@
 .contact-details-section {
   width: 400px;
   margin-top: 75px;
+  margin-left: 50px;
 }
 
 .contact-details-section h2 {
@@ -325,6 +326,17 @@
 }
 
 @media only screen and (min-width: 2200px) {
+  .form-text-container {
+    width: 800px;
+  }
+  .form-text-container h1 {
+    font-size: 55px;
+  }
+
+  .form-text-container p {
+    font-size: 24px;
+  }
+
   .input-field {
     height: 60px;
   }
@@ -381,5 +393,18 @@
     100% {
       right: 900px;
     }
+  }
+
+  .contact-details-section {
+    width: 450px;
+    margin-left: 0px;
+  }
+
+  .contact-details-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-details-section p {
+    font-size: 20px;
   }
 }
