@@ -8,14 +8,14 @@
 }
 
 .form-text-container {
-  margin: 5px;
   width: 600px;
+  margin: 5px;
 }
 
 .form-text-container h1 {
+  color: rgb(140, 214, 214);
   font-size: 48px;
   font-weight: 400;
-  color: rgb(140, 214, 214);
   background: linear-gradient(
     265deg,
     rgba(158, 79, 79, 0.5) -75%,
@@ -25,16 +25,15 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0;
   width: fit-content;
+  margin: 0;
 }
 
 .form-text-container p {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-
-  font-size: 22px;
   color: rgba(255, 255, 255, 0.8);
+  font-size: 22px;
+  font-weight: 400;
   background: linear-gradient(
     265deg,
     rgba(158, 79, 79, 0.7) -150%,
@@ -47,15 +46,15 @@
 }
 
 .input-field {
-  height: 50px;
+  color: rgb(200, 200, 200);
+  font-size: 16px;
+  background: #2e2e2e;
   width: 100%;
+  height: 50px;
   padding: 0 20px;
   border: 0;
-  background: #2e2e2e;
-  font-size: 16px;
-  color: rgb(200, 200, 200);
-  outline: none;
   box-sizing: border-box;
+  outline: none;
 }
 
 .form-container {
@@ -73,9 +72,9 @@
 }
 
 .form-grid-item {
-  padding: 0;
-  margin: 5px;
   position: relative;
+  margin: 5px;
+  padding: 0;
   grid-column: span 2;
 }
 
@@ -84,18 +83,18 @@
 }
 
 .contact-form textarea {
-  padding: 20px;
-  min-height: 150px;
   font-family: Arial;
+  min-height: 150px;
+  padding: 20px;
   resize: none;
 }
 
 .input-focus {
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 0;
   height: 1px;
+  bottom: 0;
+  left: 0;
   border-bottom: 2px solid rgb(125, 171, 190);
   transition: 0.5s;
 }
@@ -111,58 +110,60 @@
 .submit-button {
   grid-column-start: 2;
   grid-column-end: 3;
-  cursor: pointer;
-  width: fit-content;
-  height: 40px;
-  margin-left: auto;
   justify-self: end;
   display: flex;
   align-items: center;
+
+  width: fit-content;
+  height: 40px;
+  margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
   background: rgba(0, 0, 0, 0);
   border: 2px solid rgb(77, 128, 151);
-  transition: 0.2s;
+
   color: rgb(125, 171, 190);
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.616);
+
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .submit-button-disabled {
+  color: gray;
   background-color: #2e2e2e;
   border-color: rgba(79, 79, 87, 0);
-
-  color: gray;
   cursor: not-allowed;
 }
 
 .submit-button p {
-  margin: 1px;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.616);
+  margin: 1px;
 }
 
 .submit-button:hover {
-  background: rgb(77, 128, 151);
   color: rgb(216, 216, 216);
+  background: rgb(77, 128, 151);
 }
 
 .submit-button-disabled:hover {
+  color: gray;
   background-color: #2e2e2e;
   border-color: rgb(79, 79, 87);
-  color: gray;
 }
 
 .envelope {
+  display: none;
   position: absolute;
-  z-index: 10;
   width: 600px;
   height: 280px;
-  overflow: hidden;
   opacity: 0;
-  display: none;
+  overflow: hidden;
+  z-index: 10;
 }
 
 .envelope polyline {
@@ -175,8 +176,8 @@
   position: absolute;
   width: 600px;
   height: 100%;
-  left: 50%;
   top: -190px;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -185,7 +186,6 @@
   width: 600px;
   height: 380px;
   left: 50%;
-  bottom: 0px;
   bottom: -380px;
   transform: translateX(-50%);
 }
@@ -195,7 +195,6 @@
   width: 900px;
   height: 700px;
   top: 50%;
-  left: 50%;
   left: 0%;
   transform: translate(-50%, -50%);
 }
@@ -205,7 +204,6 @@
   width: 900px;
   height: 700px;
   top: 50%;
-  right: 50%;
   right: 0%;
   transform: translate(50%, -50%);
 }
@@ -222,6 +220,7 @@
 .animate-bottom-env {
   animation: envelope-animate-bottom 0.75s forwards;
 }
+
 .animate-left-env {
   animation: envelope-animate-left 0.75s forwards;
 }
@@ -307,16 +306,16 @@
 }
 
 .contact-details-section h2 {
-  width: fit-content;
   font-size: 28px;
   font-weight: 400;
+  width: fit-content;
+  margin-bottom: 0px;
   margin-left: -5px;
-  margin-bottom: 0;
 }
 
 .contact-details-section p {
-  font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
 }
 
 .contact-details-section .some-links {
@@ -324,6 +323,6 @@
 }
 
 .contact-details-section .link-icon {
-  height: 50px;
   width: 50px;
+  height: 50px;
 }
