@@ -62,6 +62,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .aboutme-skills-section h2 {
@@ -96,7 +98,6 @@
   align-items: center;
   justify-items: center;
   width: 125px;
-  min-height: 155px;
   margin: 15px;
 }
 
@@ -204,7 +205,64 @@
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1200px) {
+  .aboutme-container h1 {
+    font-size: 36px;
+  }
+
+  .aboutme-text-section p {
+    font-size: 16px;
+  }
+
+  .get-in-touch {
+    font-size: 16px;
+  }
+
+  .aboutme-skills-section h2 {
+    font-size: 18px;
+  }
+
+  .skill-category {
+    font-size: 16px;
+  }
+
+  .skill {
+    width: 75px;
+  }
+
+  .skill-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+
+  .category-dots-container {
+    display: flex;
+    justify-content: space-between;
+    width: 35px;
+  }
+
+  .category-dot {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .aboutme-container h1 {
+    font-size: 38px;
+  }
+  .aboutme-text-section p {
+    font-size: 20px;
+  }
+
+  .get-in-touch {
+    font-size: 20px;
+  }
+
   .aboutme-skills-section h2 {
     font-size: 22px;
   }
@@ -215,7 +273,6 @@
 
   .skill {
     width: 100px;
-    min-height: 140px;
   }
 
   .skill-icon {
@@ -256,7 +313,6 @@
 
   .skill {
     width: 135px;
-    min-height: 160px;
   }
 
   .skill-icon {

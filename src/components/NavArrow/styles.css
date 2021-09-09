@@ -137,6 +137,22 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .label {
+    font-size: 16px;
+  }
+
+  .nav-button:hover .label {
+    font-size: 18px;
+    text-shadow: 0px 4px 6px rgb(0, 0, 0);
+  }
+
+  .nav-arrow {
+    width: 40px;
+    height: 20px;
+  }
+}
+
 @media only screen and (min-width: 2200px) {
   .nav-button {
     width: 200px;

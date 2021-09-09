@@ -141,7 +141,7 @@ const skills = [
         logo: AgileLogo,
       },
       {
-        name: 'Game Development',
+        name: 'Game Dev',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
         logo: GodotLogo,
