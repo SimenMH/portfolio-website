@@ -11,10 +11,10 @@ const NavArrow = props => {
     >
       <p className='label'>{label}</p>
       <div className='nav-arrow'>
-        <svg className='arrow-svg'>
+        <svg viewBox='0 0 50 25' className='arrow-svg'>
           <polyline points='1,25 25,1 50,25 25,1' />
         </svg>
-        <svg className='arrow-svg-fill'>
+        <svg viewBox='0 0 50 25' className='arrow-svg-fill'>
           <polyline points='1,25 25,1 50,25 25,1' />
         </svg>
       </div>

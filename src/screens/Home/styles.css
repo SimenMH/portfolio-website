@@ -37,8 +37,8 @@
 }
 
 .home-text h2 {
-  font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
   background: linear-gradient(
     265deg,
     rgba(158, 79, 79, 0.5) 0%,
@@ -119,4 +119,30 @@
 .resume-button {
   margin-top: 7vh;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 2200px) {
+  .home-text {
+    margin-left: 180px;
+  }
+  .home-text h1 {
+    font-size: 92px;
+  }
+
+  .home-text h2 {
+    font-size: 48px;
+  }
+
+  .resume-button p {
+    font-size: 20px;
+  }
+
+  .some-links {
+    width: 25rem;
+  }
+
+  .link-icon {
+    width: 70px;
+    height: 70px;
+  }
 }
