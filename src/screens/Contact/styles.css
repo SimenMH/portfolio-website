@@ -174,17 +174,15 @@
 
 .envelope-top {
   position: absolute;
-  width: 600px;
   height: 100%;
-  top: -190px;
+  top: -380px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .envelope-bottom {
   position: absolute;
-  width: 600px;
-  height: 380px;
+  height: 100%;
   left: 50%;
   bottom: -380px;
   transform: translateX(-50%);
@@ -192,19 +190,17 @@
 
 .envelope-left {
   position: absolute;
-  width: 900px;
-  height: 700px;
+  width: 100%;
   top: 50%;
-  left: 0%;
+  left: -600px;
   transform: translate(-50%, -50%);
 }
 
 .envelope-right {
   position: absolute;
-  width: 900px;
-  height: 700px;
+  width: 100%;
   top: 50%;
-  right: 0%;
+  right: 600px;
   transform: translate(50%, -50%);
 }
 
@@ -250,37 +246,37 @@
 
 @keyframes envelope-animate-top {
   0% {
-    top: -190px;
+    top: -380px;
   }
   100% {
-    top: 0px;
+    top: -190px;
   }
 }
 
 @keyframes envelope-animate-bottom {
   0% {
-    bottom: -380px;
+    bottom: 100px;
   }
   100% {
-    bottom: 0px;
+    bottom: 290px;
   }
 }
 
 @keyframes envelope-animate-left {
   0% {
-    left: 0%;
+    left: -600px;
   }
   100% {
-    left: 50%;
+    left: -300px;
   }
 }
 
 @keyframes envelope-animate-right {
   0% {
-    right: 0%;
+    right: 600px;
   }
   100% {
-    right: 50%;
+    right: 900px;
   }
 }
 
@@ -325,4 +321,69 @@
 .contact-details-section .link-icon {
   width: 50px;
   height: 50px;
+}
+
+@media only screen and (min-width: 2200px) {
+  .input-field {
+    height: 60px;
+  }
+
+  .contact-form textarea {
+    min-height: 230px;
+  }
+
+  .form-container {
+    width: 800px;
+  }
+
+  .submit-button {
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .contact-details-section {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
+  .envelope {
+    width: 800px;
+    height: 380px;
+  }
+
+  @keyframes envelope-animate-top {
+    0% {
+      top: -380px;
+    }
+    100% {
+      top: -125px;
+    }
+  }
+
+  @keyframes envelope-animate-bottom {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: -255px;
+    }
+  }
+
+  @keyframes envelope-animate-left {
+    0% {
+      left: -500px;
+    }
+    100% {
+      left: -100px;
+    }
+  }
+
+  @keyframes envelope-animate-right {
+    0% {
+      right: 600px;
+    }
+    100% {
+      right: 900px;
+    }
+  }
 }

@@ -71,8 +71,8 @@ const Contact = () => {
               <div
                 className={`envelope-left ${animate ? 'animate-left-env' : ''}`}
               >
-                <svg width='900' height='700'>
-                  <polyline points='0,0 450,350 0,700' />
+                <svg width='1800' height='1400'>
+                  <polyline points='0,0 900,700 0,1400' />
                 </svg>
               </div>
               <div
@@ -80,8 +80,8 @@ const Contact = () => {
                   animate ? 'animate-right-env' : ''
                 }`}
               >
-                <svg width='900' height='700'>
-                  <polyline points='900,0 450,350 900,700' />
+                <svg width='1800' height='1400'>
+                  <polyline points='1800,0 900,700 1800,1400' />
                 </svg>
               </div>
               <div
@@ -89,15 +89,15 @@ const Contact = () => {
                   animate ? 'animate-bottom-env' : ''
                 }`}
               >
-                <svg width='600' height='380'>
-                  <polyline points='0,380 300,190 600,380' />
+                <svg width='1200' height='760'>
+                  <polyline points='0,760 600,380 1200,760' />
                 </svg>
               </div>
               <div
                 className={`envelope-top ${animate ? 'animate-top-env' : ''}`}
               >
-                <svg width='600' height='250'>
-                  <polyline points='0,0 300,190 600,0' />
+                <svg width='1200' height='500'>
+                  <polyline points='0,0 600,380 1200,0' />
                 </svg>
               </div>
             </div>
