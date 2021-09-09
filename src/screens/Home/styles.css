@@ -1,26 +1,24 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
 .home-text {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: flex-start;
   margin-left: 95px;
   margin-top: 10vh;
 }
 
 .home-text h1 {
-  margin: 0;
-  margin-left: -2px;
-  font-weight: 400;
   font-size: 72px;
+  font-weight: 400;
   background: linear-gradient(
     265deg,
     rgba(158, 79, 79, 0.5) -50%,
@@ -30,6 +28,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-left: -2px;
 }
 
 .cool-adjective {
@@ -37,8 +37,6 @@
 }
 
 .home-text h2 {
-  margin: 0;
-  margin-left: 2px;
   font-weight: 400;
   font-size: 36px;
   background: linear-gradient(
@@ -50,20 +48,22 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-left: 2px;
 }
 
 .home-text p {
-  margin: 0;
   font-size: 20px;
   font-weight: 300;
+  margin: 0;
   margin-left: 3px;
 }
 
 .line-seperator {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .some-links {
@@ -76,20 +76,20 @@
 }
 
 .link-icon {
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     56.35deg,
     rgb(28, 92, 101) -90%,
     rgb(72, 73, 68) 55%,
     rgb(105, 29, 24) 185%
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .link-icon svg {
@@ -105,14 +105,14 @@
 
 .link-icon:hover svg {
   fill: rgba(225, 225, 225, 0);
-  stroke-width: 1px;
   stroke: rgb(225, 225, 225, 0.8);
+  stroke-width: 1px;
 }
 
 .status-container {
   display: flex;
-  height: 100%;
   align-items: flex-end;
+  height: 100%;
   margin-top: 10vh;
 }
 
