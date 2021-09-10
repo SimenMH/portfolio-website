@@ -60,7 +60,7 @@ const AboutMe = () => {
             <div className='skills-grid'>
               {skillList[categoryIdx].skills.map(skill => {
                 return (
-                  <div className='skill'>
+                  <div className='skill' key={skill.name}>
                     <div className='skill-icon'>
                       <img
                         src={skill.logo}
@@ -91,6 +91,7 @@ const AboutMe = () => {
                     idx === categoryIdx ? 'active-category-dot' : ''
                   }`}
                   onClick={() => setCategoryIdx(idx)}
+                  key={idx}
                 />
               );
             })}
