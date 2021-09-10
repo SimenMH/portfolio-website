@@ -7,8 +7,6 @@
 .contact-content-container {
   display: flex;
   justify-content: space-evenly;
-  /* margin-left: 200px;
-  margin-right: 200px; */
 }
 
 .form-text-container {
@@ -503,5 +501,42 @@
 
   .contact-details-section p {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+  .contact-content-container {
+    flex-direction: column;
+  }
+
+  .contact-details-section {
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+
+  .contact-details-section h2 {
+    font-size: 22px;
+  }
+
+  .contact-details-section p {
+    font-size: 16px;
+  }
+
+  .contact-details-section .some-links {
+    width: 150px;
+  }
+
+  .contact-details-section .link-icon {
+    width: 40px;
+    height: 40px;
   }
 }
