@@ -13,15 +13,10 @@ import NavArrow from './components/NavArrow/NavArrow.component';
 import Home from './screens/Home/Home.screen';
 import AboutMe from './screens/AboutMe/AboutMe.screen';
 import Contact from './screens/Contact/Contact.screen';
-import Portfolio from './screens/Portfolio/Portfolio.screen';
-import MobilePortfolio from './screens/Portfolio/MobilePortfolio/MobilePortfolio.screen';
-import WebPortfolio from './screens/Portfolio/WebPortfolio/WebPortfolio.screen';
-import GamePortfolio from './screens/Portfolio/GamePortfolio/GamePortfolio.screen';
 
 const navigation = {
   '/': {
     name: 'Home',
-    // down: '/portfolio',
     left: '/contact',
     right: '/about',
   },
@@ -119,18 +114,6 @@ const App = () => {
             </Route>
             <Route path='/contact' exact>
               <Contact />
-            </Route>
-            <Route path='/portfolio' exact>
-              <Portfolio />
-            </Route>
-            <Route path='/portfolio/mobile' exact>
-              <MobilePortfolio />
-            </Route>
-            <Route path='/portfolio/web' exact>
-              <WebPortfolio />
-            </Route>
-            <Route path='/portfolio/games' exact>
-              <GamePortfolio />
             </Route>
             <Redirect from='*' to='/' />
           </Switch>
