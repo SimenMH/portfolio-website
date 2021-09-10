@@ -217,3 +217,9 @@
   );
   margin: 15px 0px 15px 0px;
 }
+
+@media only screen and (max-width: 700px) {
+  .arrow-container {
+    display: none;
+  }
+}

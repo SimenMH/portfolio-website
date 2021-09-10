@@ -386,3 +386,38 @@
     font-size: 16px;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .aboutme-container {
+    margin: 0 25px;
+  }
+  .aboutme-text-section {
+    margin-right: 0;
+  }
+
+  .aboutme-skills-section h2 {
+    font-size: 20px;
+  }
+
+  .skill-category {
+    font-size: 16px;
+  }
+
+  .skill {
+    width: 75px;
+    margin: 5px;
+  }
+
+  .skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skill-name {
+    font-size: 12px;
+  }
+
+  .skills-cycle-button {
+    width: 50px;
+  }
+}
