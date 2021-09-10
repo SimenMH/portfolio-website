@@ -63,8 +63,8 @@ const Contact = () => {
           <div className='form-text-container'>
             <h1>Contact me</h1>
             <p>
-              Whether you're interested in hiring me, or just want to drop me an
-              anonymous message, don't hesitate to use this form!
+              Whether you're interested in hiring me, or just want to send me an
+              anonymous message, don't hesitate to use this form
             </p>
           </div>
           <div className='form-container'>
