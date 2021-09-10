@@ -83,6 +83,7 @@
   font-size: 24px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .skills-grid {
@@ -358,7 +359,7 @@
   }
 
   .get-in-touch {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .aboutme-skills-section {
@@ -419,5 +420,47 @@
 
   .skills-cycle-button {
     width: 50px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .aboutme-container h1 {
+    font-size: 32px;
+  }
+
+  .aboutme-text-section p {
+    font-size: 16px;
+  }
+
+  .get-in-touch {
+    font-size: 16px;
+  }
+
+  .aboutme-skills-section {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  .aboutme-skills-section h2 {
+    font-size: 18px;
+  }
+
+  .skill-category {
+    font-size: 16px;
+  }
+
+  .skill {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .skills-cycle-button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .skills-cycle-arrow {
+    width: 7px;
+    height: 7px;
   }
 }

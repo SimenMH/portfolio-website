@@ -204,8 +204,31 @@
   .home-container {
     margin: 0 40px;
   }
+
   .home-text {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .home-container {
+    margin: 0 25px;
+  }
+
+  .home-text h1 {
+    font-size: 30px;
+  }
+
+  .home-text h2 {
+    font-size: 18px;
+  }
+
+  .line-seperator {
+    margin-bottom: 20px;
+  }
+
+  .resume-button p {
+    font-size: 10px;
   }
 }

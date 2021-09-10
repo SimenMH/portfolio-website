@@ -52,6 +52,7 @@ const Contact = () => {
         'Sending message failed. Try again later or message me directly by email or phone.'
       );
     }
+    setAnimate(true);
     setIsSending(false);
   };
 
