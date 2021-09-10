@@ -5,15 +5,15 @@ import './styles.css';
 const menuItems = [
   { name: 'Home', path: '/', submenu: false },
   { name: 'About me', path: '/about', submenu: false },
-  {
-    name: 'Porfolio',
-    path: '/portfolio',
-    submenu: [
-      { name: 'Web apps', path: '/portfolio/web' },
-      { name: 'Mobile apps', path: '/portfolio/mobile' },
-      { name: 'Video Games', path: '/portfolio/games' },
-    ],
-  },
+  // {
+  //   name: 'Porfolio',
+  //   path: '/portfolio',
+  //   submenu: [
+  //     { name: 'Web apps', path: '/portfolio/web' },
+  //     { name: 'Mobile apps', path: '/portfolio/mobile' },
+  //     { name: 'Video Games', path: '/portfolio/games' },
+  //   ],
+  // },
   { name: 'Contact', path: '/contact', submenu: false },
 ];
 

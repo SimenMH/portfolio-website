@@ -21,7 +21,7 @@ import GamePortfolio from './screens/Portfolio/GamePortfolio/GamePortfolio.scree
 const navigation = {
   '/': {
     name: 'Home',
-    down: '/portfolio',
+    // down: '/portfolio',
     left: '/contact',
     right: '/about',
   },
