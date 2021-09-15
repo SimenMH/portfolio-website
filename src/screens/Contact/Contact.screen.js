@@ -26,33 +26,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
-    // try {
-    //   const response = await emailjs.send(
-    //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
-    //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-    //     { ...formInput, message: formInput.message.replaceAll('\n', '<br>') },
-    //     process.env.REACT_APP_EMAILJS_USER_ID
-    //   );
+    try {
+      const response = await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        { ...formInput, message: formInput.message.replaceAll('\n', '<br>') },
+        process.env.REACT_APP_EMAILJS_USER_ID
+      );
 
-    //   if (response.status === 200) {
-    //     setTimeout(() => {
-    //       setFormInput({
-    //         name: '',
-    //         email: '',
-    //         subject: '',
-    //         message: '',
-    //       });
-    //     }, 750);
-    //     setAnimate(true);
-    //   } else {
-    //     throw new Error('Error sending email');
-    //   }
-    // } catch {
-    //   alert(
-    //     'Sending message failed. Try again later or message me directly by email or phone.'
-    //   );
-    // }
-    setAnimate(true);
+      if (response.status === 200) {
+        setTimeout(() => {
+          setFormInput({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
+        }, 750);
+        setAnimate(true);
+      } else {
+        throw new Error('Error sending email');
+      }
+    } catch {
+      alert(
+        'Sending message failed. Try again later or message me directly by email or phone.'
+      );
+    }
     setIsSending(false);
   };
 
