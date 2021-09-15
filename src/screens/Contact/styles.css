@@ -329,11 +329,11 @@
   font-size: 18px;
 }
 
-.contact-details-section .some-links {
+.contact-details-section .contact-links-container {
   width: 200px;
 }
 
-.contact-details-section .link-icon {
+.contact-links-container .link-icon {
   width: 50px;
   height: 50px;
 }
@@ -417,11 +417,11 @@
     font-size: 16px;
   }
 
-  .contact-details-section .some-links {
+  .contact-details-section .contact-links-container {
     width: 150px;
   }
 
-  .contact-details-section .link-icon {
+  .contact-links-container .link-icon {
     width: 40px;
     height: 40px;
   }
@@ -517,11 +517,11 @@
     font-size: 16px;
   }
 
-  .contact-details-section .some-links {
+  .contact-details-section .contact-links-container {
     width: 150px;
   }
 
-  .contact-details-section .link-icon {
+  .contact-links-container .link-icon {
     width: 40px;
     height: 40px;
   }
