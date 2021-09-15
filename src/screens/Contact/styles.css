@@ -232,6 +232,10 @@
   animation: hide-form 2s forwards;
 }
 
+.hide-button {
+  animation: hide-button 0.75s;
+}
+
 @keyframes envelope-animate {
   0% {
     opacity: 1;
@@ -294,6 +298,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes hide-button {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

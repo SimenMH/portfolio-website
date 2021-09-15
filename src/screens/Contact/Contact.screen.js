@@ -26,32 +26,33 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
-    try {
-      const response = await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        { ...formInput, message: formInput.message.replaceAll('\n', '<br>') },
-        process.env.REACT_APP_EMAILJS_USER_ID
-      );
+    // try {
+    //   const response = await emailjs.send(
+    //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    //     { ...formInput, message: formInput.message.replaceAll('\n', '<br>') },
+    //     process.env.REACT_APP_EMAILJS_USER_ID
+    //   );
 
-      if (response.status === 200) {
-        setTimeout(() => {
-          setFormInput({
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-          });
-        }, 750);
-        setAnimate(true);
-      } else {
-        throw new Error('Error sending email');
-      }
-    } catch {
-      alert(
-        'Sending message failed. Try again later or message me directly by email or phone.'
-      );
-    }
+    //   if (response.status === 200) {
+    //     setTimeout(() => {
+    //       setFormInput({
+    //         name: '',
+    //         email: '',
+    //         subject: '',
+    //         message: '',
+    //       });
+    //     }, 750);
+    //     setAnimate(true);
+    //   } else {
+    //     throw new Error('Error sending email');
+    //   }
+    // } catch {
+    //   alert(
+    //     'Sending message failed. Try again later or message me directly by email or phone.'
+    //   );
+    // }
+    setAnimate(true);
     setIsSending(false);
   };
 
@@ -105,7 +106,11 @@ const Contact = () => {
             <form
               className={`contact-form ${animate ? 'hide-form' : ''}`}
               onSubmit={e => sendMessage(e)}
-              onAnimationEnd={() => setAnimate(false)}
+              onAnimationEnd={e => {
+                if (e.animationName === 'hide-form') {
+                  setAnimate(false);
+                }
+              }}
             >
               <div className='form-grid-item form-grid-half'>
                 <input
@@ -169,8 +174,8 @@ const Contact = () => {
               <input
                 type='submit'
                 className={`form-grid-item submit-button ${
-                  isSending ? 'submit-button-disabled' : ''
-                }`}
+                  animate ? 'hide-button' : ''
+                }${isSending ? 'submit-button-disabled' : ''}`}
                 value='Send Message'
                 disabled={isSending}
               />
