@@ -174,8 +174,8 @@ const Contact = () => {
               <input
                 type='submit'
                 className={`form-grid-item submit-button ${
-                  animate ? 'hide-button' : ''
-                }${isSending ? 'submit-button-disabled' : ''}`}
+                  isSending || animate ? 'submit-button-disabled' : ''
+                } ${animate ? 'hide-button' : ''}`}
                 value='Send Message'
                 disabled={isSending}
               />
