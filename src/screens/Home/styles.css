@@ -102,11 +102,11 @@
     font-size: 18px;
   }
 
-  .some-links {
+  .home-links-container {
     width: 400px;
   }
 
-  .link-icon {
+  .home-links-container .link-icon {
     width: 65px;
     height: 65px;
   }
@@ -139,11 +139,11 @@
     font-size: 12px;
   }
 
-  .some-links {
+  .home-links-container {
     width: 225px;
   }
 
-  .link-icon {
+  .home-links-container .link-icon {
     width: 40px;
     height: 40px;
   }
