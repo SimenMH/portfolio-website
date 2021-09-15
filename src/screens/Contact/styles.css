@@ -186,7 +186,7 @@
   position: absolute;
   height: 100%;
   left: 50%;
-  bottom: -380px;
+  bottom: 0px;
   transform: translateX(-50%);
 }
 
@@ -194,8 +194,8 @@
   position: absolute;
   width: 100%;
   top: 50%;
-  left: -600px;
-  transform: translate(-50%, -50%);
+  left: -900px;
+  transform: translate(0%, -50%);
 }
 
 .envelope-right {
@@ -270,10 +270,10 @@
 
 @keyframes envelope-animate-left {
   0% {
-    left: -600px;
+    transform: translate(0%, -50%);
   }
   100% {
-    left: -300px;
+    transform: translate(50%, -50%);
   }
 }
 
@@ -390,24 +390,6 @@
     }
   }
 
-  @keyframes envelope-animate-left {
-    0% {
-      left: -500px;
-    }
-    100% {
-      left: -100px;
-    }
-  }
-
-  @keyframes envelope-animate-right {
-    0% {
-      right: 600px;
-    }
-    100% {
-      right: 900px;
-    }
-  }
-
   .contact-details-section {
     width: 450px;
     margin-left: 0px;
@@ -491,15 +473,6 @@
     }
     100% {
       bottom: 270px;
-    }
-  }
-
-  @keyframes envelope-animate-left {
-    0% {
-      left: -650px;
-    }
-    100% {
-      left: -400px;
     }
   }
 
@@ -587,17 +560,27 @@
     width: 100%;
   }
 
-  @keyframes envelope-animate {
+  .envelope {
+    width: 100%;
+    height: 320px;
   }
+
   @keyframes envelope-animate-top {
+    0% {
+      top: -380px;
+    }
+    100% {
+      top: -170px;
+    }
   }
+
   @keyframes envelope-animate-bottom {
-  }
-  @keyframes envelope-animate-left {
-  }
-  @keyframes envelope-animate-right {
-  }
-  @keyframes hide-form {
+    0% {
+      bottom: 50px;
+    }
+    100% {
+      bottom: 270px;
+    }
   }
 
   .contact-details-section {
