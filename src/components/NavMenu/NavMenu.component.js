@@ -1,6 +1,6 @@
+import './styles.css';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './styles.css';
 
 const menuItems = [
   { name: 'Home', path: '/', submenu: false },
