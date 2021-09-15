@@ -105,7 +105,11 @@ const Contact = () => {
             <form
               className={`contact-form ${animate ? 'hide-form' : ''}`}
               onSubmit={e => sendMessage(e)}
-              onAnimationEnd={() => setAnimate(false)}
+              onAnimationEnd={e => {
+                if (e.animationName === 'hide-form') {
+                  setAnimate(false);
+                }
+              }}
             >
               <div className='form-grid-item form-grid-half'>
                 <input
@@ -169,8 +173,8 @@ const Contact = () => {
               <input
                 type='submit'
                 className={`form-grid-item submit-button ${
-                  isSending ? 'submit-button-disabled' : ''
-                }`}
+                  isSending || animate ? 'submit-button-disabled' : ''
+                } ${animate ? 'hide-button' : ''}`}
                 value='Send Message'
                 disabled={isSending}
               />
