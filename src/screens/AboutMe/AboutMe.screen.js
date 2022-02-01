@@ -26,18 +26,17 @@ const AboutMe = () => {
           <p>
             Full-stack developer living in Norway. Been a programmer since 2012,
             and have a serious passion for building unique projects and creating
-            smooth and intuitive user experiences.
+            intuitive user experiences.
           </p>
           <p>
             Well-organized, positive, and highly motivated problem-solver with
-            great attention to detail. Other passions include cooking, video
-            games, outdoor activities and surrounding myself with animals.
+            great attention to detail. Other passions include cooking, outdoor
+            activities, and surrounding myself with animals.
           </p>
           <p>
             Knowledgeable of both the back and frontend development spectrum.
             Familiar with a wide range of programming utilities and languages,
-            and love working on ambitious projects with creative and motivated
-            people.
+            and love working on ambitious projects with motivated people.
           </p>
           <Link className='get-in-touch' to='/contact'>
             Get in touch!
