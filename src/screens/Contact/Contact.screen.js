@@ -193,10 +193,6 @@ const Contact = () => {
             <p>Phone: +47 966-33-404</p>
             <p>Time zone: GMT+1</p>
           </div>
-          <p>
-            I am currently interested in jobs within commuting distance of
-            Bergen, or remote work.
-          </p>
           <div className='contact-links-container'>
             <SoMeLinks />
           </div>
