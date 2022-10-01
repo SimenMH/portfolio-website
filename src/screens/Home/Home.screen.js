@@ -12,9 +12,9 @@ const Home = () => {
         <div className='line-seperator' />
         <h2>A Full Stack / Front End web developer from Norway.</h2>
       </div>
-      <a className='primary-button resume-button' href={CVPDF} download>
+      {/* <a className='primary-button resume-button' href={CVPDF} download>
         <p>Download Resume</p>
-      </a>
+      </a> */}
       <div className='home-links-container'>
         <SoMeLinks />
       </div>
