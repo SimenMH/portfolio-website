@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+
+  //Rewrite to www
+  Options +FollowSymLinks
+  RewriteEngine on
+  RewriteCond %{HTTP_HOST} ^simenmh.com[nc]
+  RewriteRule ^(.*)$ https://www.simenmh.com/$1 [r=301,nc]
+ 
+</IfModule>
