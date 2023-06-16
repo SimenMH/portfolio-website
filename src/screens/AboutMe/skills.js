@@ -8,16 +8,15 @@ import SASSLogo from '../../assets/skill-logos/SASS-logo.svg';
 
 import NodeJSLogo from '../../assets/skill-logos/NodeJS-logo.svg';
 import ExpressLogo from '../../assets/skill-logos/Express-logo.svg';
-import SQLLogo from '../../assets/skill-logos/SQL-logo.svg';
-import GraphQLLogo from '../../assets/skill-logos/GraphQL-logo.svg';
-import MongoDB from '../../assets/skill-logos/MongoDB-logo.svg';
-import RESTLogo from '../../assets/skill-logos/REST-logo.svg';
-
-import PythonLogo from '../../assets/skill-logos/Python-logo.svg';
 import CsharpLogo from '../../assets/skill-logos/Csharp-logo.svg';
-import gitLogo from '../../assets/skill-logos/git-logo.svg';
-import DockerLogo from '../../assets/skill-logos/Docker-logo.svg';
-import AgileLogo from '../../assets/skill-logos/Agile-logo.svg';
+import AspNetLogo from '../../assets/skill-logos/AspNet-logo.svg';
+import SQLLogo from '../../assets/skill-logos/SQL-logo.svg';
+import MongoDB from '../../assets/skill-logos/MongoDB-logo.svg';
+
+import AzureLogo from '../../assets/skill-logos/Azure-logo.svg';
+import DevOpsLogo from '../../assets/skill-logos/DevOps-logo.svg';
+import GitLogo from '../../assets/skill-logos/git-logo.svg';
+import PythonLogo from '../../assets/skill-logos/Python-logo.svg';
 import UnityLogo from '../../assets/skill-logos/Unity-logo.svg';
 import GodotLogo from '../../assets/skill-logos/Godot-logo.svg';
 
@@ -27,38 +26,32 @@ const skills = [
     skills: [
       {
         name: 'JavaScript',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: JavaScriptLogo,
       },
       {
         name: 'HTML5',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: HTML5Logo,
       },
       {
         name: 'CSS3',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: CSS3Logo,
       },
       {
         name: 'React',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: ReactLogo,
       },
       {
         name: 'Angular',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: AngularLogo,
       },
       {
         name: 'SASS',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: SASSLogo,
       },
     ],
@@ -68,42 +61,36 @@ const skills = [
     skills: [
       {
         name: 'NodeJS',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: NodeJSLogo,
         size: 'skill-img-large',
       },
       {
         name: 'Express',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: ExpressLogo,
         size: 'skill-img-xlarge',
       },
       {
+        name: 'C# .NET',
+        description: '',
+        logo: CsharpLogo,
+        size: 'skill-img-large',
+      },
+      {
+        name: 'ASP.NET',
+        description: '',
+        logo: AspNetLogo,
+      },
+      {
         name: 'SQL',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: SQLLogo,
       },
       {
-        name: 'GraphQL',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: GraphQLLogo,
-      },
-      {
         name: 'MongoDB',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        description: '',
         logo: MongoDB,
-      },
-      {
-        name: 'REST APIs',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: RESTLogo,
-        size: 'skill-img-large',
       },
     ],
   },
@@ -111,39 +98,33 @@ const skills = [
     category: 'Other',
     skills: [
       {
-        name: 'Python',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: PythonLogo,
+        name: 'Azure',
+        description: '',
+        logo: AzureLogo,
       },
       {
-        name: 'C#',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: CsharpLogo,
+        name: 'DevOps',
+        description: '',
+        logo: DevOpsLogo,
       },
       {
         name: 'Git',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: gitLogo,
+        description: '',
+        logo: GitLogo,
       },
       {
-        name: 'Docker',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: DockerLogo,
+        name: 'Python',
+        description: '',
+        logo: PythonLogo,
       },
       {
-        name: 'Agile',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
-        logo: AgileLogo,
+        name: 'Unity',
+        description: '',
+        logo: UnityLogo,
       },
       {
-        name: 'Game Dev',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel enim varius, ullamcorper eros sed, condimentum eros.',
+        name: 'Godot',
+        description: '',
         logo: GodotLogo,
       },
     ],

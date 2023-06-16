@@ -22,7 +22,7 @@ const AboutMe = () => {
     <div className='aboutme-container fade-in'>
       <div className='aboutme-content-container'>
         <section className='aboutme-text-section'>
-          <h1>A Little About Me</h1>
+          <h1>About Me</h1>
           <p>
             As a full-stack developer based in Norway, I have been passionately
             immersed in the world of programming since 2012. I take immense

@@ -1,7 +1,7 @@
 import './styles.css';
 import SoMeLinks from '../../components/SoMeLinks/SoMeLinks.component';
 
-// import CVPDF from '../../assets/Simen Herland - CV.pdf';
+import CVPDF from '../../assets/Simen Herland - CV.pdf';
 
 const Home = () => {
   return (
@@ -12,9 +12,9 @@ const Home = () => {
         <div className='line-seperator' />
         <h2>A Full Stack / Front End web developer from Norway.</h2>
       </div>
-      {/* <a className='primary-button resume-button' href={CVPDF} download>
+      <a className='primary-button resume-button' href={CVPDF} download>
         <p>Download Resume</p>
-      </a> */}
+      </a>
       <div className='home-links-container'>
         <SoMeLinks />
       </div>
