@@ -59,155 +59,6 @@
   width: 100%;
 }
 
-.aboutme-skills-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.aboutme-skills-section h2 {
-  font-size: 28px;
-  margin: 0;
-  margin-top: 10px;
-}
-
-.skills-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.skill-category {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.skills-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 33% 33% 33%;
-  width: 100%;
-  max-width: 1100px;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  width: 125px;
-  margin: 15px;
-}
-
-.skill-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(65, 65, 65);
-  background: linear-gradient(
-    56.35deg,
-    rgb(28, 92, 101) -90%,
-    rgb(72, 73, 68) 55%,
-    rgb(105, 29, 24) 185%
-  );
-  width: 50px;
-  height: 50px;
-  padding: 15px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
-}
-
-.skill-icon-img {
-  width: 100%;
-  height: 100%;
-}
-
-.skill-img-large {
-  width: 130%;
-  height: 130%;
-}
-
-.skill-img-xlarge {
-  width: 150%;
-  height: 150%;
-}
-
-.skill-name {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(209, 209, 209);
-  font-size: 20px;
-  text-align: center;
-  margin: 15px 0px 10px 0px;
-}
-
-.skill p {
-  color: rgb(175, 175, 175);
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 20px;
-  margin: 0;
-}
-
-.skills-cycle-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-  transition: 0.1s;
-}
-
-.skills-cycle-button:hover {
-  transform: scale(120%);
-}
-
-.skills-cycle-button:hover .skills-cycle-arrow {
-  border-color: rgb(145, 167, 173);
-}
-
-.skills-cycle-arrow {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  padding: 3px;
-  border: solid rgb(101, 107, 109);
-  border-width: 0 3px 3px 0;
-  transition: 0.1s;
-}
-
-.skills-arrow-right {
-  transform: rotate(-45deg);
-}
-
-.skills-arrow-left {
-  transform: rotate(135deg);
-}
-
-.category-dots-container {
-  display: flex;
-  justify-content: space-between;
-  width: 50px;
-}
-
-.category-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.25);
-  cursor: pointer;
-}
-
-.active-category-dot {
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
 @media only screen and (min-width: 2200px) {
   .aboutme-container h1 {
     font-size: 54px;
@@ -225,33 +76,6 @@
   .get-in-touch {
     font-size: 24px;
   }
-
-  .aboutme-skills-section h2 {
-    font-size: 32px;
-  }
-
-  .skill-category {
-    font-size: 28px;
-  }
-
-  .skill {
-    width: 135px;
-  }
-
-  .skill-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .skills-cycle-button {
-    width: 80px;
-    height: 80px;
-  }
-
-  .skills-cycle-arrow {
-    width: 15px;
-    height: 15px;
-  }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -264,27 +88,6 @@
 
   .get-in-touch {
     font-size: 20px;
-  }
-
-  .aboutme-skills-section h2 {
-    font-size: 22px;
-  }
-
-  .skill-category {
-    font-size: 20px;
-  }
-
-  .skill {
-    width: 100px;
-  }
-
-  .skill-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .skill-name {
-    font-size: 18px;
   }
 }
 
@@ -299,38 +102,6 @@
 
   .get-in-touch {
     font-size: 16px;
-  }
-
-  .aboutme-skills-section h2 {
-    font-size: 18px;
-  }
-
-  .skill-category {
-    font-size: 16px;
-  }
-
-  .skill {
-    width: 75px;
-  }
-
-  .skill-icon {
-    width: 25px;
-    height: 25px;
-  }
-
-  .skill-name {
-    font-size: 14px;
-  }
-
-  .category-dots-container {
-    display: flex;
-    justify-content: space-between;
-    width: 35px;
-  }
-
-  .category-dot {
-    width: 7px;
-    height: 7px;
   }
 }
 
@@ -362,31 +133,6 @@
   .get-in-touch {
     font-size: 18px;
   }
-
-  .aboutme-skills-section {
-    margin-bottom: 50px;
-  }
-
-  .aboutme-skills-section h2 {
-    font-size: 22px;
-  }
-
-  .skill-category {
-    font-size: 20px;
-  }
-
-  .skill {
-    width: 85px;
-  }
-
-  .skill-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .skill-name {
-    font-size: 16px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -395,32 +141,6 @@
   }
   .aboutme-text-section {
     margin-right: 0;
-  }
-
-  .aboutme-skills-section h2 {
-    font-size: 20px;
-  }
-
-  .skill-category {
-    font-size: 16px;
-  }
-
-  .skill {
-    width: 75px;
-    margin: 5px;
-  }
-
-  .skill-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .skill-name {
-    font-size: 12px;
-  }
-
-  .skills-cycle-button {
-    width: 50px;
   }
 }
 
@@ -435,33 +155,5 @@
 
   .get-in-touch {
     font-size: 16px;
-  }
-
-  .aboutme-skills-section {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
-
-  .aboutme-skills-section h2 {
-    font-size: 18px;
-  }
-
-  .skill-category {
-    font-size: 16px;
-  }
-
-  .skill {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .skills-cycle-button {
-    width: 25px;
-    height: 25px;
-  }
-
-  .skills-cycle-arrow {
-    width: 7px;
-    height: 7px;
   }
 }

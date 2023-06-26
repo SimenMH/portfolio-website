@@ -1,0 +1,133 @@
+.contact-container {
+  width: 100%;
+  margin-right: 145px;
+  margin-left: 75px;
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  &__details {
+    width: 400px;
+    margin-top: 75px;
+    margin-left: 50px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 400;
+      width: fit-content;
+      margin-bottom: 0px;
+      margin-left: -5px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+    }
+
+    @media only screen and (min-width: 2200px) {
+      width: 450px;
+      margin-left: 0px;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 1600px) {
+      width: 350px;
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      width: 250px;
+      margin-left: 30px;
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      width: 350px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      margin-left: 20px;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    @media only screen and (max-width: 550px) {
+      width: 75%;
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__links-container {
+    width: 200px;
+
+    .link-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media only screen and (max-width: 1600px) {
+      width: 150px;
+      .link-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      width: 150px;
+      .link-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
