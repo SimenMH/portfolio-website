@@ -100,7 +100,7 @@
 
 .nav-button:hover .arrow-svg {
   transform: scale(110%);
-  filter: drop-shadow(0px 4px 6px rgb(0, 0, 0));
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0));
 }
 
 .nav-button:hover .arrow-svg-fill {
@@ -111,7 +111,6 @@
 .arrow-fade-in {
   animation: arrow-fade-in 0.3s forwards;
 }
-
 .arrow-fade-out {
   animation: arrow-fade-out 0.3s forwards;
 }
@@ -126,6 +125,7 @@
     opacity: 1;
   }
 }
+
 @keyframes arrow-fade-out {
   0% {
     filter: blur(0px);
@@ -136,33 +136,40 @@
     opacity: 0;
   }
 }
+
 @media only screen and (min-width: 2200px) {
   .nav-button {
     width: 200px;
     height: 115px;
   }
+
   .label {
     font-size: 22px;
   }
+
   .nav-button:hover .label {
     font-size: 24px;
     text-shadow: 0px 4px 6px rgb(0, 0, 0);
   }
+
   .nav-arrow {
     width: 60px;
     height: 30px;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .label {
     font-size: 16px;
   }
+
   .nav-button:hover .label {
     font-size: 18px;
     text-shadow: 0px 4px 6px rgb(0, 0, 0);
   }
+
   .nav-arrow {
     width: 40px;
     height: 20px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
