@@ -66,7 +66,7 @@ const SkillCarousel = () => {
             <div
               className={`skill-carousel-container__nav-dot ${
                 idx === categoryIdx
-                  ? 'skill-carousel-container__nav-dots--active'
+                  ? 'skill-carousel-container__nav-dot--active'
                   : ''
               }`}
               onClick={() => setCategoryIdx(idx)}
