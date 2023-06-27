@@ -5,7 +5,7 @@ import ContactForm from '../../components/ContactForm/ContactForm.component';
 
 const Contact = () => {
   return (
-    <div className='contact-container fade-in'>
+    <div className='contact-container fade-in-animation'>
       <div className='contact-container__content'>
         <section>
           <ContactForm />

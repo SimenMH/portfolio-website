@@ -4,37 +4,28 @@
   align-items: flex-end;
   width: 100%;
 }
-
-.link-icon {
+.some-links__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    56.35deg,
-    rgb(28, 92, 101) -90%,
-    rgb(72, 73, 68) 55%,
-    rgb(105, 29, 24) 185%
-  );
+  background: linear-gradient(56.35deg, rgb(28, 92, 101) -90%, rgb(72, 73, 68) 55%, rgb(105, 29, 24) 185%);
   width: 55px;
   height: 55px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s;
 }
-
-.link-icon svg {
+.some-links__icon svg {
   fill: rgba(225, 225, 225, 0.8);
-  stroke: rgb(255, 255, 255, 0);
+  stroke: rgba(255, 255, 255, 0);
   transition: 0.2s;
 }
-
-.link-icon:hover {
+.some-links__icon:hover {
   transform: scale(110%);
   box-shadow: 0px 0px 10px 4px rgba(255, 255, 255, 0.05);
 }
-
-.link-icon:hover svg {
+.some-links__icon:hover svg {
   fill: rgba(225, 225, 225, 0);
-  stroke: rgb(225, 225, 225, 0.8);
+  stroke: rgba(225, 225, 225, 0.8);
   stroke-width: 1px;
-}
+}/*# sourceMappingURL=styles.css.map */

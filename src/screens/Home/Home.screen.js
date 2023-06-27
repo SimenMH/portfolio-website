@@ -5,7 +5,7 @@ import CVPDF from '../../assets/Simen Herland - CV.pdf';
 
 const Home = () => {
   return (
-    <div className='home-container fade-in'>
+    <div className='home-container fade-in-animation'>
       <div className='home-container__text'>
         <h1>Hi, I'm Simen</h1>
         <h1>Software Engineer</h1>

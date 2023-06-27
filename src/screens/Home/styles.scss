@@ -49,7 +49,6 @@
         margin-bottom: 20px;
       }
     }
-
     @media only screen and (min-width: 2200px) {
       margin-left: 180px;
       h1 {
@@ -59,7 +58,6 @@
         font-size: 46px;
       }
     }
-
     @media only screen and (max-width: 1600px) {
       h1 {
         font-size: 64px;
@@ -68,7 +66,6 @@
         font-size: 28px;
       }
     }
-
     @media only screen and (max-width: 1200px) {
       margin-left: 25px;
       h1 {
@@ -78,7 +75,6 @@
         font-size: 24px;
       }
     }
-
     @media only screen and (max-width: 1000px) {
       margin-left: 0px;
       h1 {
@@ -88,12 +84,10 @@
         font-size: 18px;
       }
     }
-
     @media only screen and (max-width: 700px) {
       margin-left: auto;
       margin-right: auto;
     }
-
     @media only screen and (max-width: 420px) {
       h1 {
         font-size: 30px;
@@ -113,11 +107,9 @@
     @media only screen and (min-width: 2200px) {
       font-size: 18px;
     }
-
     @media only screen and (max-width: 1200px) {
       font-size: 12px;
     }
-
     @media only screen and (max-width: 420px) {
       font-size: 10px;
     }
@@ -128,15 +120,14 @@
 
     @media only screen and (min-width: 2200px) {
       width: 400px;
-      .link-icon {
+      .some-links__icon {
         width: 65px;
         height: 65px;
       }
     }
-
     @media only screen and (max-width: 1200px) {
       width: 225px;
-      .link-icon {
+      .some-links__icon {
         width: 40px;
         height: 40px;
       }
@@ -146,7 +137,6 @@
   @media only screen and (max-width: 700px) {
     margin: 0 40px;
   }
-
   @media only screen and (max-width: 420px) {
     margin: 0 25px;
   }

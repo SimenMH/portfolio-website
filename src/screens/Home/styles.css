@@ -124,7 +124,7 @@
   .home-container__links-container {
     width: 400px;
   }
-  .home-container__links-container .link-icon {
+  .home-container__links-container .some-links__icon {
     width: 65px;
     height: 65px;
   }
@@ -133,7 +133,7 @@
   .home-container__links-container {
     width: 225px;
   }
-  .home-container__links-container .link-icon {
+  .home-container__links-container .some-links__icon {
     width: 40px;
     height: 40px;
   }

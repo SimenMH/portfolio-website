@@ -5,9 +5,9 @@ import SkillCarousel from '../../components/SkillCarousel/SkillCarousel.componen
 
 const AboutMe = () => {
   return (
-    <div className='aboutme-container fade-in'>
-      <div className='aboutme-content-container'>
-        <section className='aboutme-text-section'>
+    <div className='aboutme-container fade-in-animation'>
+      <div className='aboutme-container__content'>
+        <div className='aboutme-container__text'>
           <h1>About Me</h1>
           <p>
             As a full-stack developer based in Norway, I have been passionately
@@ -39,11 +39,11 @@ const AboutMe = () => {
             dedicated full-stack developer, I would be thrilled to collaborate
             with you.
           </p>
-          <Link className='get-in-touch' to='/contact'>
+          <Link className='aboutme-container__get-in-touch' to='/contact'>
             Get in touch!
-            <label className='input-focus' />
+            <label className='aboutme-container__get-in-touch-focus' />
           </Link>
-        </section>
+        </div>
         <SkillCarousel />
       </div>
     </div>
