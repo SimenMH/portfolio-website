@@ -1,4 +1,3 @@
-import './styles.css';
 import SoMeLinks from '../../components/SoMeLinks/SoMeLinks.component';
 
 import CVPDF from '../../assets/Simen Herland - CV.pdf';

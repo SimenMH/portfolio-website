@@ -1,5 +1,3 @@
-import './styles.css';
-
 const SoMeLinks = () => {
   return (
     <div className='some-links'>

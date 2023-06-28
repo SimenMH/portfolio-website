@@ -1,4 +1,3 @@
-import './styles.css';
 import { useState } from 'react';
 
 import skillList from './skills.js';

@@ -1,5 +1,3 @@
-import './styles.css';
-
 import SoMeLinks from '../../components/SoMeLinks/SoMeLinks.component';
 import ContactForm from '../../components/ContactForm/ContactForm.component';
 

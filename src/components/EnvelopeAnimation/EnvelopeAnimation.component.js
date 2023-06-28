@@ -1,5 +1,3 @@
-import './styles.css';
-
 const EnvelopeAnimation = ({ animate }) => {
   return (
     <div className={`envelope-container ${animate ? 'animate-envelope' : ''}`}>

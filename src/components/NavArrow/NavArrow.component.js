@@ -1,5 +1,3 @@
-import './styles.css';
-
 const NavArrow = props => {
   const { direction, label, fade } = props;
   return (

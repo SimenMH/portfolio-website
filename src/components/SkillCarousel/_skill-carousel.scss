@@ -6,10 +6,10 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  @media only screen and (max-width: 1000px) {
+  @media #{$mq-md} {
     margin-bottom: 50px;
   }
-  @media only screen and (max-width: 420px) {
+  @media #{$mq-xs} {
     margin-left: -25px;
     margin-right: -25px;
   }
@@ -19,22 +19,16 @@
     margin: 0;
     margin-top: 10px;
 
-    @media only screen and (min-width: 2200px) {
+    @media #{$mq-xxl} {
       font-size: 32px;
     }
-    @media only screen and (max-width: 1600px) {
+    @media #{$mq-xl} {
       font-size: 22px;
     }
-    @media only screen and (max-width: 1200px) {
-      font-size: 18px;
-    }
-    @media only screen and (max-width: 1000px) {
-      font-size: 22px;
-    }
-    @media only screen and (max-width: 700px) {
+    @media #{$mq-md} {
       font-size: 20px;
     }
-    @media only screen and (max-width: 420px) {
+    @media #{$mq-xs} {
       font-size: 18px;
     }
   }
@@ -45,22 +39,13 @@
     margin: 0;
     margin-bottom: 10px;
 
-    @media only screen and (min-width: 2200px) {
+    @media #{$mq-xxl} {
       font-size: 28px;
     }
-    @media only screen and (max-width: 1600px) {
+    @media #{$mq-xl} {
       font-size: 20px;
     }
-    @media only screen and (max-width: 1200px) {
-      font-size: 16px;
-    }
-    @media only screen and (max-width: 1000px) {
-      font-size: 20px;
-    }
-    @media only screen and (max-width: 700px) {
-      font-size: 16px;
-    }
-    @media only screen and (max-width: 420px) {
+    @media #{$mq-xs} {
       font-size: 16px;
     }
   }
@@ -74,14 +59,14 @@
     cursor: pointer;
     transition: 0.1s;
 
-    @media only screen and (min-width: 2200px) {
+    @media #{$mq-xxl} {
       width: 80px;
       height: 80px;
     }
-    @media only screen and (max-width: 700px) {
+    @media #{$mq-md} {
       width: 50px;
     }
-    @media only screen and (max-width: 420px) {
+    @media #{$mq-xs} {
       width: 25px;
       height: 25px;
     }
@@ -104,11 +89,11 @@
     border-width: 0 3px 3px 0;
     transition: 0.1s;
 
-    @media only screen and (min-width: 2200px) {
+    @media #{$mq-xxl} {
       width: 15px;
       height: 15px;
     }
-    @media only screen and (max-width: 420px) {
+    @media #{$mq-xs} {
       width: 7px;
       height: 7px;
     }
@@ -127,7 +112,7 @@
     justify-content: space-between;
     width: 50px;
 
-    @media only screen and (max-width: 1200px) {
+    @media #{$mq-xl} {
       display: flex;
       justify-content: space-between;
       width: 35px;
@@ -141,7 +126,7 @@
     background-color: rgba(255, 255, 255, 0.25);
     cursor: pointer;
 
-    @media only screen and (max-width: 1200px) {
+    @media #{$mq-xl} {
       width: 7px;
       height: 7px;
     }
@@ -173,23 +158,23 @@
     width: 125px;
     margin: 15px;
 
-    @media only screen and (min-width: 2200px) {
+    @media #{$mq-xxl} {
       width: 135px;
     }
-    @media only screen and (max-width: 1600px) {
-      width: 100px;
-    }
-    @media only screen and (max-width: 1200px) {
+    @media #{$mq-xl} {
       width: 75px;
     }
-    @media only screen and (max-width: 1000px) {
+    @media #{$mq-lg} {
+      margin: 5px;
+    }
+    @media #{$mq-md} {
       width: 85px;
     }
-    @media only screen and (max-width: 700px) {
+    @media #{$mq-s} {
       width: 75px;
       margin: 5px;
     }
-    @media only screen and (max-width: 420px) {
+    @media #{$mq-xs} {
       margin-left: 0;
       margin-right: 0;
     }
@@ -221,23 +206,19 @@
     border-radius: 50%;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
 
-    @media only screen and (min-width: 2200px) {
+    @media #{$mq-xxl} {
       width: 60px;
       height: 60px;
     }
-    @media only screen and (max-width: 1600px) {
+    @media #{$mq-xl} {
       width: 40px;
       height: 40px;
     }
-    @media only screen and (max-width: 1200px) {
+    @media #{$mq-lg} {
       width: 25px;
       height: 25px;
     }
-    @media only screen and (max-width: 1000px) {
-      width: 30px;
-      height: 30px;
-    }
-    @media only screen and (max-width: 700px) {
+    @media #{$mq-md} {
       width: 30px;
       height: 30px;
     }
@@ -265,16 +246,10 @@
     text-align: center;
     margin: 15px 0px 10px 0px;
 
-    @media only screen and (max-width: 1600px) {
-      font-size: 18px;
-    }
-    @media only screen and (max-width: 1200px) {
+    @media #{$mq-xl} {
       font-size: 14px;
     }
-    @media only screen and (max-width: 1000px) {
-      font-size: 16px;
-    }
-    @media only screen and (max-width: 700px) {
+    @media #{$mq-lg} {
       font-size: 12px;
     }
   }

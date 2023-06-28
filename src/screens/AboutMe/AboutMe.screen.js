@@ -1,4 +1,3 @@
-import './styles.css';
 import { Link } from 'react-router-dom';
 
 import SkillCarousel from '../../components/SkillCarousel/SkillCarousel.component';

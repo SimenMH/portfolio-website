@@ -1,0 +1,48 @@
+@import './scss/variables', './app', './screens/Home/home',
+  './screens/AboutMe/about-me', './screens/Contact/contact',
+  './components/NavArrow/nav-arrow', './components/NavMenu/nav-menu',
+  './components/SoMeLinks/some-links',
+  './components/SkillCarousel/skill-carousel',
+  './components/ContactForm/contact-form',
+  './components/EnvelopeAnimation/envelope-animation';
+
+body {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    243.17deg,
+    #352424 -8.58%,
+    #252020 16.44%,
+    #242424 52.1%,
+    #252a2b 87.75%,
+    #2e4142 111.52%
+  );
+  margin: 0;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 32, 32);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
