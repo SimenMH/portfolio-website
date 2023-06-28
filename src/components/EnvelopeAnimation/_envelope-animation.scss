@@ -13,18 +13,20 @@
     stroke-width: 2px;
   }
 
-  @media only screen and (min-width: 2200px) {
+  @media #{$mq-xxl} {
     width: 800px;
     height: 380px;
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media #{$mq-xl} {
     width: 500px;
     height: 270px;
   }
 
-  @media only screen and (max-width: 550px) {
+  @media #{$mq-s} {
     width: 100%;
+  }
+  @media #{$mq-xs} {
     height: 320px;
   }
 }
@@ -128,7 +130,7 @@
   }
 }
 
-@media only screen and (min-width: 2200px) {
+@media #{$mq-xxl} {
   @keyframes animate-envelope-top {
     0% {
       top: -380px;
@@ -148,7 +150,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media #{$mq-xl} {
   @keyframes animate-envelope-top {
     0% {
       top: -380px;
@@ -168,7 +170,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media #{$mq-s} {
   @keyframes animate-envelope-top {
     0% {
       top: -380px;

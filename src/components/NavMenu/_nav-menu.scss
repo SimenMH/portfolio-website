@@ -20,15 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 40px;
+    width: 40px;
+    height: 36px;
     background: linear-gradient(
       56.35deg,
       rgb(28, 92, 101) -90%,
       rgb(72, 73, 68) 55%,
       rgb(105, 29, 24) 185%
     );
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 0px 25px 25px 0px;
     cursor: pointer;
     transition: 0.5s;
@@ -48,14 +48,14 @@
     }
 
     &__line {
-      width: 25px;
+      width: 20px;
       height: 4px;
       background: linear-gradient(
         90deg,
         rgba(255, 255, 255, 0.64) 0%,
         rgba(255, 255, 255, 0.48) 100%
       );
-      margin-right: 10px;
+      margin-right: 8px;
       border-radius: 1px 5px 5px 1px;
     }
   }

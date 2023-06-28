@@ -164,11 +164,9 @@
     @media #{$mq-xl} {
       width: 75px;
     }
-    @media #{$mq-lg} {
-      margin: 5px;
-    }
     @media #{$mq-md} {
       width: 85px;
+      margin: 5px;
     }
     @media #{$mq-s} {
       width: 75px;
@@ -213,10 +211,6 @@
     @media #{$mq-xl} {
       width: 40px;
       height: 40px;
-    }
-    @media #{$mq-lg} {
-      width: 25px;
-      height: 25px;
     }
     @media #{$mq-md} {
       width: 30px;
