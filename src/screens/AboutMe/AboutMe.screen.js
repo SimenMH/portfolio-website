@@ -13,16 +13,16 @@ const AboutMe = () => {
             serious passion for programming since 2012.
           </p>
           <p>
-            I take immense pride and enjoyment in building exceptional projects
-            alongside exceptional people. I consider myself organized, positive,
-            and highly motivated. I thrive on solving problems with an
-            undoubtedly great attention to detail.
+            I take immense pride and enjoyment in building fun and ambitious
+            projects alongside exceptional people. I consider myself organized,
+            positive, and highly motivated. I thrive on solving problems with a
+            great attention to detail.
           </p>
           <p>
             When I'm not immersed in work, I find solace in exploring my other
-            passions, such as cooking, engaging in outdoor activities, and
-            embracing the company of animals. These passions not only bring
-            balance to my life but also inspire creativity in my work.
+            passions, such as cooking, engaging in outdoor activities, and the
+            company of animals. These passions help bring balance to my life and
+            also inspire creativity in my work.
           </p>
           <p>
             My expertise extends across both front-end and back-end development,
