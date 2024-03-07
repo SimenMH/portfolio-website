@@ -5,6 +5,15 @@ import CVPDF from '../../assets/Simen Herland - CV.pdf';
 const Home = () => {
   return (
     <div className='home-container fade-in-animation'>
+      <a
+        className='primary-button home-container__boggdle-button'
+        href='https://www.simenmh.com/boggdle'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <p>Play Boggdle!</p>
+      </a>
+
       <div className='home-container__text'>
         <h1>Hi, I'm Simen</h1>
         <h1>Software Engineer</h1>

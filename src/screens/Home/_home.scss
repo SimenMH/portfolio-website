@@ -138,4 +138,25 @@
       }
     }
   }
+
+  &__boggdle-button {
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 75px;
+    right: -125px;
+
+    @media #{$mq-lg} {
+      font-size: 12px;
+    }
+    @media #{$mq-md} {
+      top: 25px;
+      right: -100px;
+    }
+    @media #{$mq-s} {
+      top: 15px;
+      right: -15px;
+      font-size: 10px;
+    }
+  }
 }
