@@ -1,0 +1,140 @@
+.nav-menu {
+  position: fixed;
+  display: none;
+  flex-direction: row-reverse;
+  top: 10px;
+  left: -150px;
+  transition: 0.3s;
+  z-index: 5;
+
+  &--show {
+    left: 0px;
+    z-index: 15;
+
+    .menu-list {
+      box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__expand-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 36px;
+    background: linear-gradient(
+      56.35deg,
+      rgb(28, 92, 101) -90%,
+      rgb(72, 73, 68) 55%,
+      rgb(105, 29, 24) 185%
+    );
+    margin-top: 5px;
+    border-radius: 0px 25px 25px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      padding-left: 7px;
+      box-shadow: 4px 0px 10px 4px rgba(255, 255, 255, 0.068);
+    }
+
+    &__line-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 70%;
+      margin-left: 2px;
+    }
+
+    &__line {
+      width: 20px;
+      height: 4px;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.64) 0%,
+        rgba(255, 255, 255, 0.48) 100%
+      );
+      margin-right: 8px;
+      border-radius: 1px 5px 5px 1px;
+    }
+  }
+}
+
+.nav-menu-list {
+  width: 150px;
+  height: fit-content;
+  background: linear-gradient(
+    56.35deg,
+    rgb(57, 78, 85) -190%,
+    rgb(46, 46, 46) 50%,
+    rgb(58, 41, 41) 190%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(98, 98, 98, 0.25);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 10px;
+    }
+
+    &--active {
+      background-color: rgba(34, 34, 34, 0.75);
+    }
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__submenu {
+    &__item {
+      h2 {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+    }
+
+    &__separator {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    &__dot {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media #{$mq-s} {
+  .nav-menu {
+    display: flex;
+  }
+}

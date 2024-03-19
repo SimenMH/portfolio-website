@@ -1,4 +1,3 @@
-import './styles.css';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -28,10 +27,10 @@ const NavMenu = () => {
   const renderMenuItems = () => {
     return menuItems.map((item, idx, arr) => {
       return (
-        <div className='menu-item-container' key={idx}>
+        <div key={idx}>
           <Link
-            className={`menu-item ${
-              item.path === curPath ? 'current-menu-item' : ''
+            className={`nav-menu-list__item ${
+              item.path === curPath ? 'nav-menu-list__item--active' : ''
             }`}
             to={item.path}
             onClick={() => setShowMenu(false)}
@@ -42,39 +41,41 @@ const NavMenu = () => {
             item.submenu.map((item, idx) => {
               return (
                 <Link
-                  className={`menu-item submenu-item ${
-                    item.path === curPath ? 'current-menu-item' : ''
+                  className={`nav-menu-list__item nav-menu-list__submenu__item ${
+                    item.path === curPath ? 'nav-menu-list__item--active' : ''
                   }`}
                   to={item.path}
                   onClick={() => setShowMenu(false)}
                   key={idx}
                 >
-                  <div className='submenu-list-line' />
+                  <div className='nav-menu-list__submenu__separator' />
                   <h2>
-                    <div className='submenu-dot' />
+                    <div className='nav-menu-list__submenu__dot' />
                     {item.name}
                   </h2>
                 </Link>
               );
             })}
-          {idx !== arr.length - 1 && <div className='menu-list-line' />}
+          {idx !== arr.length - 1 && (
+            <div className='nav-menu-list__separator' />
+          )}
         </div>
       );
     });
   };
 
   return (
-    <div className={`menu ${showMenu ? 'menu-show' : ''}`}>
+    <div className={`nav-menu ${showMenu ? 'nav-menu--show' : ''}`}>
       {/* Menu Button */}
-      <div className='menu-button' onClick={toggleMenu}>
-        <div className='menu-line-container'>
-          <div className='menu-line' />
-          <div className='menu-line' />
-          <div className='menu-line' />
+      <div className='nav-menu__expand-button' onClick={toggleMenu}>
+        <div className='nav-menu__expand-button__line-container'>
+          <div className='nav-menu__expand-button__line' />
+          <div className='nav-menu__expand-button__line' />
+          <div className='nav-menu__expand-button__line' />
         </div>
       </div>
       {/* Menu list */}
-      <div className='menu-list'>{renderMenuItems()}</div>
+      <div className='nav-menu-list'>{renderMenuItems()}</div>
     </div>
   );
 };

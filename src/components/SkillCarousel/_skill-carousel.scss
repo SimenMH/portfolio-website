@@ -1,0 +1,250 @@
+.skill-carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  @media #{$mq-md} {
+    margin-bottom: 50px;
+  }
+  @media #{$mq-xs} {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 0;
+    margin-top: 10px;
+
+    @media #{$mq-xxl} {
+      font-size: 32px;
+    }
+    @media #{$mq-xl} {
+      font-size: 22px;
+    }
+    @media #{$mq-md} {
+      font-size: 20px;
+    }
+    @media #{$mq-xs} {
+      font-size: 18px;
+    }
+  }
+
+  &__category {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media #{$mq-xxl} {
+      font-size: 28px;
+    }
+    @media #{$mq-xl} {
+      font-size: 20px;
+    }
+    @media #{$mq-xs} {
+      font-size: 16px;
+    }
+  }
+
+  &__cycle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: 0.1s;
+
+    @media #{$mq-xxl} {
+      width: 80px;
+      height: 80px;
+    }
+    @media #{$mq-md} {
+      width: 50px;
+    }
+    @media #{$mq-xs} {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      transform: scale(120%);
+
+      .skill-carousel-container__cycle-arrow {
+        border-color: rgb(145, 167, 173);
+      }
+    }
+  }
+
+  &__cycle-arrow {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    padding: 3px;
+    border: solid rgb(101, 107, 109);
+    border-width: 0 3px 3px 0;
+    transition: 0.1s;
+
+    @media #{$mq-xxl} {
+      width: 15px;
+      height: 15px;
+    }
+    @media #{$mq-xs} {
+      width: 7px;
+      height: 7px;
+    }
+
+    &--right {
+      transform: rotate(-45deg);
+    }
+
+    &--left {
+      transform: rotate(135deg);
+    }
+  }
+
+  &__nav-dots-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+
+    @media #{$mq-xl} {
+      display: flex;
+      justify-content: space-between;
+      width: 35px;
+    }
+  }
+
+  &__nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+
+    @media #{$mq-xl} {
+      width: 7px;
+      height: 7px;
+    }
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 125px;
+    margin: 15px;
+
+    @media #{$mq-xxl} {
+      width: 135px;
+    }
+    @media #{$mq-xl} {
+      width: 75px;
+    }
+    @media #{$mq-md} {
+      width: 85px;
+      margin: 5px;
+    }
+    @media #{$mq-s} {
+      width: 75px;
+      margin: 5px;
+    }
+    @media #{$mq-xs} {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    p {
+      color: rgb(175, 175, 175);
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+
+  &__skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    background: linear-gradient(
+      56.35deg,
+      rgb(28, 92, 101) -90%,
+      rgb(72, 73, 68) 55%,
+      rgb(105, 29, 24) 185%
+    );
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+
+    @media #{$mq-xxl} {
+      width: 60px;
+      height: 60px;
+    }
+    @media #{$mq-xl} {
+      width: 40px;
+      height: 40px;
+    }
+    @media #{$mq-md} {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__skill-icon-img {
+    width: 100%;
+    height: 100%;
+
+    &--large {
+      width: 130%;
+      height: 130%;
+    }
+
+    &--xlarge {
+      width: 150%;
+      height: 150%;
+    }
+  }
+
+  &__skill-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(209, 209, 209);
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0px 10px 0px;
+
+    @media #{$mq-xl} {
+      font-size: 14px;
+    }
+    @media #{$mq-lg} {
+      font-size: 12px;
+    }
+  }
+}

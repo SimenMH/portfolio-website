@@ -1,4 +1,3 @@
-import './App.css';
 import { useState } from 'react';
 import {
   Route,
@@ -86,7 +85,7 @@ const App = () => {
   return (
     <div className='page-container'>
       <NavMenu />
-      <div className='arrow-container'>
+      <div className='page-container__arrow-container'>
         {renderNavArrow('up')}
         {renderNavArrow('down')}
         {renderNavArrow('left')}
@@ -95,8 +94,10 @@ const App = () => {
 
       <div className='page-content'>
         <div
-          className={`center-container ${
-            transition.animate ? `transition-${transition.direction}` : ''
+          className={`page-content__center-container ${
+            transition.animate
+              ? `page-transition-animation--${transition.direction}`
+              : ''
           }`}
           onAnimationEnd={e => {
             if (e.animationName.startsWith('slide')) {

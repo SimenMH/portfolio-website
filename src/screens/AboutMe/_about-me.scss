@@ -1,0 +1,139 @@
+.aboutme-container {
+  width: 100%;
+  margin-left: 145px;
+  margin-right: 15px;
+
+  @media #{$mq-lg} {
+    margin-left: 125px;
+    margin-right: 50px;
+  }
+  @media #{$mq-md} {
+    margin: 0 95px;
+  }
+  @media #{$mq-s} {
+    margin: 0 25px;
+  }
+
+  h1 {
+    width: fit-content;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    background: linear-gradient(
+      265deg,
+      rgba(158, 79, 79, 0.5) -75%,
+      #ffffff 50%,
+      rgba(72, 137, 151, 0.5) 300%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media #{$mq-xxl} {
+      font-size: 54px;
+    }
+    @media #{$mq-xl} {
+      font-size: 38px;
+    }
+    @media #{$mq-lg} {
+      font-size: 36px;
+    }
+    @media #{$mq-xs} {
+      font-size: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    margin: 55px 0;
+
+    @media #{$mq-lg} {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    width: 45%;
+    margin-right: 25px;
+
+    @media #{$mq-xxl} {
+      width: 40%;
+      margin-right: 40px;
+    }
+    @media #{$mq-lg} {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @media #{$mq-md} {
+      margin-right: 0;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 22px;
+      font-weight: 400;
+      background: linear-gradient(
+        265deg,
+        rgba(158, 79, 79, 0.7) -150%,
+        #ffffff 50%,
+        rgba(72, 137, 151, 0.7) 250%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media #{$mq-xxl} {
+        font-size: 24px;
+      }
+      @media #{$mq-xl} {
+        font-size: 20px;
+      }
+      @media #{$mq-lg} {
+        font-size: 18px;
+      }
+      @media #{$mq-xs} {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__get-in-touch {
+    position: relative;
+    color: rgb(140, 214, 214);
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    @media #{$mq-xxl} {
+      font-size: 24px;
+    }
+    @media #{$mq-xl} {
+      font-size: 20px;
+    }
+    @media #{$mq-lg} {
+      font-size: 18px;
+    }
+    @media #{$mq-xs} {
+      font-size: 16px;
+    }
+
+    &:hover {
+      .aboutme-container__get-in-touch-focus {
+        width: 100%;
+      }
+    }
+  }
+
+  &__get-in-touch-focus {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid rgb(125, 171, 190);
+    transition: 0.5s;
+  }
+}

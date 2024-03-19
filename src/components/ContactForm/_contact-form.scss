@@ -1,0 +1,245 @@
+.contact-form {
+  width: 600px;
+
+  &__text {
+    width: 600px;
+    margin: 5px;
+
+    h1 {
+      color: rgb(140, 214, 214);
+      font-size: 48px;
+      font-weight: 400;
+      background: linear-gradient(
+        265deg,
+        rgba(158, 79, 79, 0.5) -75%,
+        #ffffff 50%,
+        rgba(72, 137, 151, 0.5) 300%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: fit-content;
+      margin: 0;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 22px;
+      font-weight: 400;
+      background: linear-gradient(
+        265deg,
+        rgba(158, 79, 79, 0.7) -150%,
+        #ffffff 50%,
+        rgba(72, 137, 151, 0.7) 250%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media #{$mq-xxl} {
+      width: 800px;
+      h1 {
+        font-size: 55px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+
+    @media #{$mq-xl} {
+      width: 480px;
+      h1 {
+        font-size: 38px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    @media #{$mq-s} {
+      width: 100%;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    textarea {
+      font-family: Arial;
+      min-height: 150px;
+      padding: 20px;
+      resize: none;
+
+      @media #{$mq-xxl} {
+        min-height: 230px;
+      }
+    }
+
+    &--hide {
+      pointer-events: none;
+      animation: contact-form__form--hide 2s forwards;
+    }
+  }
+
+  &__grid-item {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    grid-column: span 2;
+
+    &--half {
+      grid-column: span 1;
+
+      @media #{$mq-xs} {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  &__input-field {
+    color: rgb(200, 200, 200);
+    font-size: 16px;
+    background: #2e2e2e;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+
+    &--disabled {
+      color: gray;
+    }
+
+    &:focus {
+      + .contact-form__input-focus {
+        width: 100%;
+      }
+    }
+
+    @media #{$mq-xxl} {
+      height: 60px;
+    }
+
+    @media #{$mq-xl} {
+      height: 45px;
+      font-size: 14px;
+    }
+  }
+
+  &__input-focus {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid rgb(125, 171, 190);
+    transition: 0.5s;
+  }
+
+  &__button {
+    height: 40px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column: span 1 !important;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(77, 128, 151);
+
+    color: rgb(125, 171, 190);
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.616);
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: rgb(216, 216, 216);
+      background: rgb(77, 128, 151);
+    }
+
+    &--disabled {
+      color: gray !important;
+      background-color: #2e2e2e !important;
+      border-color: rgba(79, 79, 87, 0) !important;
+      cursor: not-allowed !important;
+      &:hover {
+        color: gray !important;
+        background-color: #2e2e2e !important;
+        border-color: rgb(79, 79, 87) !important;
+      }
+    }
+
+    &--hide {
+      animation: contact-form__button--hide 0.75s;
+    }
+
+    @media #{$mq-xxl} {
+      height: 45px;
+      font-size: 18px;
+    }
+
+    @media #{$mq-xl} {
+      height: 35px;
+      font-size: 16px;
+    }
+  }
+
+  &__try-me {
+    $light-color: #c2c3c2;
+    $dark-color: #242424;
+    margin-right: auto;
+    margin-left: 10px;
+
+    color: $light-color;
+    border-color: $light-color;
+
+    &:hover {
+      color: $dark-color;
+      background: $light-color;
+    }
+  }
+
+  @media #{$mq-xxl} {
+    width: 800px;
+  }
+
+  @media #{$mq-xl} {
+    width: 500px;
+  }
+
+  @media #{$mq-s} {
+    width: 100%;
+  }
+}
+
+@keyframes contact-form__form--hide {
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
+@keyframes contact-form__button--hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,3 +1,11 @@
+@import './scss/variables', './app', './screens/Home/home',
+  './screens/AboutMe/about-me', './screens/Contact/contact',
+  './components/NavArrow/nav-arrow', './components/NavMenu/nav-menu',
+  './components/SoMeLinks/some-links',
+  './components/SkillCarousel/skill-carousel',
+  './components/ContactForm/contact-form',
+  './components/EnvelopeAnimation/envelope-animation';
+
 body {
   position: relative;
   font-family: 'Raleway', sans-serif;

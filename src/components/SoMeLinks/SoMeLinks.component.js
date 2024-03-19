@@ -1,5 +1,3 @@
-import './styles.css';
-
 const SoMeLinks = () => {
   return (
     <div className='some-links'>
@@ -7,7 +5,7 @@ const SoMeLinks = () => {
         href='https://github.com/SimenMH//'
         target='_blank'
         rel='noreferrer'
-        className='link-icon'
+        className='some-links__icon'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -21,7 +19,7 @@ const SoMeLinks = () => {
         href='https://www.linkedin.com/in/simen-herland/'
         target='_blank'
         rel='noreferrer'
-        className='link-icon'
+        className='some-links__icon'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -35,7 +33,7 @@ const SoMeLinks = () => {
         href='mailto: simenmelo@gmail.com'
         target='_blank'
         rel='noreferrer'
-        className='link-icon'
+        className='some-links__icon'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
