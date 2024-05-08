@@ -9,32 +9,30 @@ const AboutMe = () => {
         <div className='aboutme-container__text'>
           <h1>About Me</h1>
           <p>
-            Hi, I'm Simen. A full-stack developer based in Norway who has had a
-            serious passion for programming since 2012.
+            Hi, I'm Simen. A software developer based on Norway who has had a
+            burning passion for tech and development since 2012.
           </p>
           <p>
-            I take immense pride and enjoyment in building fun and ambitious
-            projects alongside exceptional people. I consider myself organized,
-            positive, and highly motivated. I thrive on solving problems with a
+            I am entirely self-taught and exceptionally self-driven. My
+            expertise extends across both front-end and back-end development,
+            and I enjoy working on the entire development spectrum. I am
+            well-versed in various programming languages and utilities, and in
+            addition I have a strong understanding of the fundumental aspects of
+            computer science.
+          </p>
+          <p>
+            I take a lot of pride and enjoyment in building fun and ambitious
+            projects alongside likeminded people. I consider myself organized,
+            effective, highly motivated, and I love solving problems with a
             great attention to detail.
           </p>
           <p>
-            When I'm not immersed in work, I find solace in exploring my other
-            passions, such as cooking, engaging in outdoor activities, and the
-            company of animals. These passions help bring balance to my life and
-            also inspire creativity in my work.
+            Outside of work, I find solace in my other passions such as cooking,
+            outdoor activities, and the company of animals.
           </p>
           <p>
-            My expertise extends across both front-end and back-end development,
-            and I enjoy working on the entire development spectrum. I am
-            well-versed in various programming languages and utilities, which
-            makes me well prepared to take on ambitious projects alongside
-            like-minded individuals who share the same strong drive.
-          </p>
-          <p>
-            If you share a passion for innovative endeavors and are looking for
-            a dedicated full-stack developer, I would be thrilled to collaborate
-            with you!
+            If you are looking for a dedicated full-stack developer, I would be
+            thrilled to collaborate with you!
           </p>
           <Link className='aboutme-container__get-in-touch' to='/contact'>
             Get in touch!
