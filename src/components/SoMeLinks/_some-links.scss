@@ -22,7 +22,7 @@
 
     svg {
       fill: rgba(225, 225, 225, 0.8);
-      stroke: rgb(255, 255, 255, 0);
+      stroke: rgba(255, 255, 255, 0);
       transition: 0.2s;
     }
 
@@ -32,7 +32,7 @@
 
       svg {
         fill: rgba(225, 225, 225, 0);
-        stroke: rgb(225, 225, 225, 0.8);
+        stroke: rgba(225, 225, 225, 0.8);
         stroke-width: 1px;
       }
     }
