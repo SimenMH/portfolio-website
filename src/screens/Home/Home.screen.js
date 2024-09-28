@@ -18,7 +18,7 @@ const Home = () => {
         <h1>Hi, I'm Simen</h1>
         <h1>Software Engineer</h1>
         <div className='home-container__text__line-seperator' />
-        <h2>A Full Stack / Front End web developer from Norway.</h2>
+        <h2>A Full Stack / Front End engineer from Norway.</h2>
       </div>
       <a
         className='primary-button home-container__resume-button'
