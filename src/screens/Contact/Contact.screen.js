@@ -16,7 +16,7 @@ const Contact = () => {
             </h2>
             <p>Email: simenmelo@gmail.com</p>
             <p>Phone: +47 966-33-404</p>
-            <p>Time zone: GMT+1</p>
+            <p>Time zone: CET</p>
           </div>
           <div className='contact-container__links-container'>
             <SoMeLinks />
